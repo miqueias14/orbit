@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Seu espaço de estudo de poker. Reveja torneios, revise decisões e organize suas mãos com privacidade.">
+  <title>Orbit — Seu espaço de estudo de poker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="studio.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Orbit início"><span class="brand-icon" aria-hidden="true">◈</span> orbit<span class="brand-tag">POKER STUDY</span></a>
+    <span class="privacy"><i aria-hidden="true"></i> Um espaço só seu. Tudo neste dispositivo.</span>
+    <div class="topbar-actions">
+      <button id="clear-session" class="session-clear" hidden>Apagar sessão</button>
+      <button id="library-open" class="library-button" title="Seus torneios salvos"><span aria-hidden="true">▤</span> Biblioteca</button>
+      <button id="import-open" class="primary"><span aria-hidden="true">＋</span> <span>Importar</span></button>
+    </div>
+  </header>
+
+  <div class="tournament-bar">
+    <div><span class="eyebrow">SEU ESPAÇO DE ESTUDO</span><h1 id="tournament-title">Replay de torneios</h1></div>
+    <div class="session-meta" id="session-meta">PokerStars · No Limit Hold’em</div>
+  </div>
+  <div class="study-toolbar" aria-label="Ferramentas de estudo">
+    <span class="workspace-label"><span class="live-dot" aria-hidden="true"></span> Em estudo</span>
+    <button id="review-open"><span aria-hidden="true">☆</span> <span class="tool-label-full">Fila de revisão</span><span class="tool-label-short">Revisão</span> <span id="review-count" class="badge">0</span></button>
+    <button id="graph-open"><span aria-hidden="true">↗</span> <span class="tool-label-full">Evolução do stack</span><span class="tool-label-short">Stack em BB</span></button>
+    <span class="toolbar-hint">Uma decisão de cada vez.</span>
+  </div>
+  <nav class="mobile-tabs" aria-label="Painéis">
+    <button data-tab="hands"><span aria-hidden="true">▤</span> Mãos</button>
+    <button data-tab="table" class="active"><span aria-hidden="true">♠</span> Mesa</button>
+    <button data-tab="history"><span aria-hidden="true">✎</span> Estudo</button>
+  </nav>
+
+  <section class="welcome" aria-labelledby="welcome-title">
+    <div class="welcome-copy">
+      <span class="welcome-kicker"><span class="live-dot" aria-hidden="true"></span> SEU PRÓXIMO NÍVEL COMEÇA NA REVISÃO</span>
+      <h2 id="welcome-title">Cada mão conta.<br><span>Entenda a sua.</span></h2>
+      <p>Transforme o histórico do seu torneio em um espaço para pensar, testar decisões e evoluir no seu ritmo.</p>
+      <button id="welcome-import" class="primary">Importar meu histórico <span aria-hidden="true">↗</span></button>
+      <span class="welcome-hint">PokerStars · Arquivos .txt · Sem enviar seus dados</span>
+      <div class="welcome-steps"><span><b>01</b> Importe seu torneio</span><span><b>02</b> Reviva as decisões</span><span><b>03</b> Construa seu estudo</span></div>
+    </div>
+    <div class="welcome-preview" aria-hidden="true">
+      <div class="preview-heading"><span class="eyebrow">MENOS RUÍDO. MAIS CLAREZA.</span><span class="preview-live">REPLAY</span></div>
+      <div class="preview-orbit"><span class="orbit-label orbit-label-top">Reveja.</span><div class="preview-cards"><span class="preview-card">A<small>♠</small></span><span class="preview-card preview-card-purple">K<small>♦</small></span></div><span class="orbit-label orbit-label-bottom">Repense. Evolua.</span></div>
+      <div class="preview-footer"><span>Seu jogo, em perspectiva.</span><span>◈</span></div>
+    </div>
+  </section>
+
+  <main class="workspace history-hidden" data-tab="table">
+    <aside class="hand-panel panel" aria-label="Mãos da sessão">
+      <div class="panel-title"><h2>Mãos da sessão</h2><span id="hand-count" class="badge">0</span></div>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ID, jogador ou cartas" aria-label="Buscar por ID, jogador ou cartas"></label>
+      <div class="quick-filters" aria-label="Filtros rápidos">
+        <button data-filter="all" aria-pressed="true">Todas</button><button data-filter="vpip" aria-pressed="false">Joguei</button><button data-filter="anyAllin" aria-pressed="false" title="All-in de qualquer jogador">All-in</button><button data-filter="favorite" aria-pressed="false">★ Favoritas</button>
+      </div>
+      <label class="sr-only" for="filter">Tipo de mão</label>
+      <select id="filter"><option value="all">Todos os tipos de mão</option><option value="vpip">Participação voluntária</option><option value="rfi">Open raise / RFI do herói</option><option value="threebet">3-bet do herói</option><option value="heroAllin">All-in do herói</option><option value="anyAllin">All-in de qualquer jogador</option><option value="showdown">Showdown</option><option value="positive">Resultado positivo</option><option value="negative">Resultado negativo</option><option value="favorite">Favoritas</option></select>
+      <details class="advanced-search">
+        <summary>Busca avançada <span aria-hidden="true">＋</span></summary>
+        <div class="advanced-fields">
+          <label>Jogador<input id="adv-player" type="search" placeholder="Nome do jogador"></label>
+          <label>Suas cartas<input id="adv-cards" type="text" placeholder="Ex.: AKs, QQ ou Ah Kd" maxlength="20" autocomplete="off"></label>
+          <label>Posição<select id="adv-position"><option value="">Todas as posições</option><option value="BTN">BTN · Botão</option><option value="SB">SB · Small blind</option><option value="BB">BB · Big blind</option><option value="CO">CO · Cutoff</option><option value="HJ">HJ · Hijack</option><option value="LJ">LJ · Lojack</option><option value="UTG">UTG</option><option value="UTG+1">UTG+1</option><option value="UTG+2">UTG+2</option></select></label>
+          <div class="field-pair"><label>Pote mín. (BB)<input id="adv-pot-min" type="number" min="0" step="any" placeholder="0"></label><label>Pote máx. (BB)<input id="adv-pot-max" type="number" min="0" step="any" placeholder="Sem limite"></label></div>
+          <label>Etiqueta<select id="adv-tag"><option value="">Todas as etiquetas</option></select></label>
+          <button id="clear-search" class="text-button">Limpar busca e filtros</button>
+        </div>
+      </details>
+      <div class="list-meta"><span id="filtered-count">Nenhuma mão importada</span><button id="select-all" class="text-button">Selecionar visíveis</button></div>
+      <div id="hand-list" class="hand-list"></div>
+      <div class="panel-footer"><button id="export-hands">↧ Exportar selecionadas <span id="selection-count">(0)</span></button><small>← → ações · Shift + ← → mãos · Espaço reproduz</small></div>
+    </aside>
+
+    <section class="replay-column" aria-label="Mesa e reprodução">
+      <div class="table-heading">
+        <div><span class="eyebrow" id="hand-number">REPLAYER DE TORNEIOS</span><h2 id="hand-title">Selecione uma mão</h2></div>
+        <div class="heading-actions"><button id="units" aria-label="Alternar fichas e big blinds">Fichas ⇄ BB</button><button id="export-image" title="Salvar imagem da mesa atual" aria-label="Exportar imagem da mesa">↧ Imagem</button><button id="favorite" aria-label="Favoritar mão" aria-pressed="false">☆</button><button id="history-toggle" aria-label="Mostrar ações e notas" aria-expanded="false" aria-controls="study-panel">✎ Estudo</button></div>
+      </div>
+      <div id="arena" class="arena">
+        <div class="table-rail"><div class="table-felt"><div class="felt-mark">ORBIT <span>POKER STUDY</span></div></div></div>
+        <div id="table-center" class="table-center"><span class="eyebrow">UMA DECISÃO DE CADA VEZ</span><div id="board" class="board"></div><div id="pot" class="pot">Cada mão, uma nova perspectiva.</div><div id="side-pots" class="side-pots"></div><span id="street-label" class="street-label">Importe um histórico para começar</span></div>
+        <div id="seats"></div>
+      </div>
+      <div id="decision-context" class="decision-context" aria-live="polite"></div>
+      <div id="current-action" class="current-action" aria-live="polite"><span class="live-dot" aria-hidden="true"></span><span id="action-text">Históricos locais. Replay fiel. Estudo no seu ritmo.</span></div>
+      <div class="playback panel">
+        <div class="playback-header"><div class="hand-navigation"><button id="prev-hand" title="Shift + ←">← Mão anterior</button><button id="next-hand" title="Shift + →">Próxima mão →</button></div><button id="options-toggle" aria-expanded="false" aria-controls="playback-settings">Ajustes <span aria-hidden="true">⌄</span></button></div>
+        <label class="timeline-wrap"><span class="sr-only">Evento do replay</span><input id="timeline" type="range" min="0" max="0" value="0"><span id="event-count">0 / 0</span></label>
+        <div class="transport"><button id="prev" title="Ação anterior (←)">‹ <span>Voltar</span></button><button id="play" class="play-button" title="Espaço para reproduzir ou pausar">▶ Reproduzir</button><button id="next" title="Próxima ação (→)"><span>Avançar</span> ›</button><label class="speed-label"><span class="sr-only">Velocidade</span><select id="speed"><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label></div>
+        <div class="decision-controls"><button id="next-decision">Minha próxima decisão ↗</button><button id="mark-decision" aria-label="Marcar e anotar esta jogada">☆ Marcar jogada</button></div>
+        <div id="streets" class="streets"><button data-street="preflop">Pré-flop</button><button data-street="flop">Flop</button><button data-street="turn">Turn</button><button data-street="river">River</button><button data-street="showdown">Showdown</button></div>
+        <div id="playback-settings" class="playback-settings" hidden>
+          <div class="playback-options"><label><input id="four-colors" type="checkbox"> Baralho de quatro cores</label><label><input id="continuous" type="checkbox"> Avançar mãos automaticamente</label><label><input id="hero-pause" type="checkbox"> Pausar antes da minha decisão</label><label><input id="spoilers" type="checkbox" checked> Ocultar resultados futuros</label></div>
+          <div class="boundary-controls"><button id="start">Ir ao início</button><button id="end">Ir ao fim da mão</button><small>Espaço: play/pausa · ← →: ações · Shift + ← →: mãos</small></div>
+        </div>
+      </div>
+      <div class="study-strip"><div><span class="eyebrow">SEU STACK</span><strong id="hero-stack">— BB</strong></div><div><span class="eyebrow" id="call-label">PARA PAGAR</span><strong id="to-call">—</strong></div><div><span class="eyebrow">POT ODDS</span><strong id="pot-odds">—</strong></div><small id="odds-note">Informações para a próxima decisão.</small></div>
+      <p id="end-message" class="end-message"></p>
+      <section id="hand-summary" class="hand-summary panel" aria-labelledby="summary-heading" hidden><div class="panel-title"><h2 id="summary-heading">Resumo da mão</h2><button id="summary-next">Próxima mão →</button></div><p id="summary-warning"></p><div class="summary-stats"><div><span class="eyebrow">SEU RESULTADO</span><strong id="summary-net"></strong></div><div><span class="eyebrow">STACK FINAL</span><strong id="summary-stack"></strong></div></div><h3>Distribuição dos potes</h3><ul id="summary-payments"></ul></section>
+    </section>
+
+    <aside id="study-panel" class="history-panel panel" aria-label="Ações e notas">
+      <div class="panel-title"><h2>Seu estudo</h2><button id="history-close" class="text-button" aria-label="Fechar ações e notas">Fechar ×</button></div>
+      <div id="action-list" class="action-list"><p class="empty-copy">A história da mão aparece aqui, ação por ação.</p></div>
+      <div class="notes">
+        <div class="panel-title"><h2>Suas anotações</h2><span class="muted" aria-hidden="true">✎</span></div>
+        <label class="sr-only" for="notes">Notas sobre esta mão</label><textarea id="notes" placeholder="Qual foi sua leitura? O que vale revisar?"></textarea>
+        <section class="tags-section" aria-labelledby="tags-heading"><h3 id="tags-heading">Etiquetas da mão</h3><div id="tags-list" class="tags-list"></div><div class="tag-entry"><label class="sr-only" for="tag-input">Nova etiqueta</label><input id="tag-input" type="text" maxlength="32" placeholder="Criar etiqueta" autocomplete="off"><button id="tag-add" aria-label="Adicionar etiqueta">＋</button></div><div class="tag-presets" aria-label="Sugestões de etiquetas"><button data-tag="Blefe">＋ Blefe</button><button data-tag="Call difícil">＋ Call difícil</button><button data-tag="Blind contra blind">＋ Blind contra blind</button><button data-tag="All-in">＋ All-in</button></div></section>
+        <section class="bookmarks-section" aria-labelledby="bookmarks-heading"><h3 id="bookmarks-heading">Jogadas para revisar</h3><div id="decision-bookmarks"></div></section>
+        <label class="study-reveal"><input id="study-reveal" type="checkbox"> Consultar cartas do resumo após a mão</label>
+        <button id="copy">⧉ Copiar histórico original</button>
+        <details><summary>Backup e diagnóstico</summary><div class="backup-actions"><button id="backup-export">Exportar notas</button><button id="backup-import">Importar notas</button><input id="backup-file" type="file" accept=".json" hidden></div><pre id="diagnostics">Nenhum histórico carregado.</pre></details>
+      </div>
+    </aside>
+  </main>
+  <footer class="app-footer"><span>◈ ORBIT <span class="muted">/ Seu jogo, em perspectiva.</span></span><span id="storage-status">Armazenamento local · leitura privada</span></footer>
+
+  <dialog id="import-dialog" aria-labelledby="import-heading">
+    <form method="dialog"><div class="dialog-heading"><div><span class="eyebrow">COMECE PELO SEU TORNEIO</span><h2 id="import-heading">Importar histórico</h2></div><button aria-label="Fechar importação">×</button></div></form>
+    <p>Abra um ou mais arquivos PokerStars em inglês. As mãos são lidas e salvas neste dispositivo para você continuar depois.</p>
+    <label id="drop-zone" class="drop-zone"><span class="upload-icon" aria-hidden="true">↥</span><strong>Seu próximo estudo começa aqui</strong><span>Arraste arquivos .txt ou toque para selecionar</span><input id="file" type="file" accept=".txt,text/plain" multiple></label>
+    <div class="or">OU COLE O HISTÓRICO</div><label class="sr-only" for="paste">Histórico PokerStars</label><textarea id="paste" placeholder="PokerStars Hand #…" rows="5"></textarea>
+    <div class="dialog-footer"><span>Seus dados ficam no navegador.</span><button id="import-paste" class="primary">Importar texto →</button></div><p id="import-status" role="status"></p>
+  </dialog>
+  <dialog id="decision-dialog" aria-labelledby="decision-heading">
+    <form method="dialog"><div class="dialog-heading"><div><span class="eyebrow">GUARDE SUA LEITURA</span><h2 id="decision-heading">Marcar jogada</h2></div><button aria-label="Fechar anotação">×</button></div></form>
+    <p id="decision-description"></p><label for="decision-note">O que você quer revisar?</label><textarea id="decision-note" rows="5" maxlength="20000" placeholder="Ex.: considerar os blefes que eu bloqueio neste call."></textarea>
+    <div class="dialog-footer"><button id="delete-decision">Remover marcação</button><button id="save-decision" class="primary">Salvar jogada</button></div>
+  </dialog>
+  <dialog id="library-dialog" class="wide-dialog" aria-labelledby="library-heading">
+    <form method="dialog"><div class="dialog-heading"><div><span class="eyebrow">SEU JOGO, ORGANIZADO</span><h2 id="library-heading">Biblioteca de torneios</h2></div><button aria-label="Fechar biblioteca">×</button></div></form>
+    <p>Retome um torneio salvo ou importe uma nova sessão. Suas etiquetas, notas e jogadas marcadas acompanham cada mão.</p>
+    <div id="library-list" class="library-list"></div><p id="library-status" class="dialog-status" role="status"></p>
+    <div class="dialog-footer"><span>Armazenado neste dispositivo.</span><button id="library-import" class="primary">＋ Importar torneio</button></div>
+  </dialog>
+  <dialog id="review-dialog" class="wide-dialog" aria-labelledby="review-heading">
+    <form method="dialog"><div class="dialog-heading"><div><span class="eyebrow">ESTUDE COM INTENÇÃO</span><h2 id="review-heading">Sua fila de revisão</h2></div><button aria-label="Fechar fila de revisão">×</button></div></form>
+    <p>Volte às decisões que você marcou. Abra a jogada, revise sua leitura e registre o que já estudou.</p>
+    <div id="review-list" class="review-list"></div><p id="review-status" class="dialog-status" role="status"></p>
+  </dialog>
+  <dialog id="graph-dialog" class="wide-dialog" aria-labelledby="graph-heading">
+    <form method="dialog"><div class="dialog-heading"><div><span class="eyebrow">O CAMINHO DO SEU TORNEIO</span><h2 id="graph-heading">Evolução do stack</h2></div><button aria-label="Fechar gráfico">×</button></div></form>
+    <p>Seu stack em big blinds ao longo da sessão. Toque em um ponto para abrir a mão correspondente.</p>
+    <div id="stack-chart" class="stack-chart" aria-label="Gráfico interativo do stack em big blinds"></div><p id="graph-status" class="dialog-status" role="status"></p>
+  </dialog>
+  <div id="toast" role="status" class="toast" hidden></div>
+  <script src="parser.js"></script><script src="replay-engine.js"></script><script src="study-tools.js"></script><script src="feature-tools.js"></script><script src="table-export.js"></script><script src="studio.js"></script><script src="app.js"></script>
+</body>
+</html>

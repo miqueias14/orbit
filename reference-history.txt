@@ -1,0 +1,2290 @@
+﻿PokerStars Hand #262448536385: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level I (10/20) - 2026/10/19 14:12:57 ET
+Table '4040939869 1' 9-max Seat #1 is the button
+Seat 1: zaroizinho (1500 in chips) 
+Seat 2: VicLong80 (1500 in chips) 
+Seat 3: ritter7777 (1500 in chips) 
+Seat 4: BigFatBubble (1500 in chips) 
+Seat 5: 4973509 (1500 in chips) 
+Seat 6: Tunico06 (1500 in chips) 
+Seat 7: PokerRog (1500 in chips) 
+Seat 8: pinkysz (1500 in chips) 
+Seat 9: EdWinsStuff (1500 in chips) 
+zaroizinho: posts the ante 3
+VicLong80: posts the ante 3
+ritter7777: posts the ante 3
+BigFatBubble: posts the ante 3
+4973509: posts the ante 3
+Tunico06: posts the ante 3
+PokerRog: posts the ante 3
+pinkysz: posts the ante 3
+EdWinsStuff: posts the ante 3
+VicLong80: posts small blind 10
+ritter7777: posts big blind 20
+*** HOLE CARDS ***
+Dealt to zaroizinho [8s Qh]
+BigFatBubble: folds 
+4973509: folds 
+Tunico06: folds 
+PokerRog: raises 30 to 50
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: calls 50
+VicLong80: folds 
+ritter7777: folds 
+*** FLOP *** [7c 6c 3c]
+PokerRog: bets 65
+zaroizinho: folds 
+Uncalled bet (65) returned to PokerRog
+PokerRog collected 157 from pot
+PokerRog: doesn't show hand 
+*** SUMMARY ***
+Total pot 157 | Rake 0 
+Board [7c 6c 3c]
+Seat 1: zaroizinho (button) folded on the Flop
+Seat 2: VicLong80 (small blind) folded before Flop
+Seat 3: ritter7777 (big blind) folded before Flop
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 5: 4973509 folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog collected (157)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448544858: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level I (10/20) - 2026/10/19 14:13:39 ET
+Table '4040939869 1' 9-max Seat #2 is the button
+Seat 1: zaroizinho (1447 in chips) 
+Seat 2: VicLong80 (1487 in chips) 
+Seat 3: ritter7777 (1477 in chips) 
+Seat 4: BigFatBubble (1497 in chips) 
+Seat 5: 4973509 (1497 in chips) 
+Seat 6: Tunico06 (1497 in chips) 
+Seat 7: PokerRog (1604 in chips) 
+Seat 8: pinkysz (1497 in chips) 
+Seat 9: EdWinsStuff (1497 in chips) 
+zaroizinho: posts the ante 3
+VicLong80: posts the ante 3
+ritter7777: posts the ante 3
+BigFatBubble: posts the ante 3
+4973509: posts the ante 3
+Tunico06: posts the ante 3
+PokerRog: posts the ante 3
+pinkysz: posts the ante 3
+EdWinsStuff: posts the ante 3
+ritter7777: posts small blind 10
+BigFatBubble: posts big blind 20
+*** HOLE CARDS ***
+Dealt to zaroizinho [Ks Kc]
+4973509: folds 
+Tunico06: raises 20 to 40
+PokerRog: folds 
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: calls 40
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: calls 20
+*** FLOP *** [Qc 4d 4h]
+BigFatBubble: checks 
+Tunico06: checks 
+zaroizinho: checks 
+*** TURN *** [Qc 4d 4h] [7c]
+BigFatBubble: checks 
+Tunico06: checks 
+zaroizinho: bets 52
+BigFatBubble: folds 
+Tunico06: folds 
+Uncalled bet (52) returned to zaroizinho
+zaroizinho collected 157 from pot
+*** SUMMARY ***
+Total pot 157 | Rake 0 
+Board [Qc 4d 4h 7c]
+Seat 1: zaroizinho collected (157)
+Seat 2: VicLong80 (button) folded before Flop (didn't bet)
+Seat 3: ritter7777 (small blind) folded before Flop
+Seat 4: BigFatBubble (big blind) folded on the Turn
+Seat 5: 4973509 folded before Flop (didn't bet)
+Seat 6: Tunico06 folded on the Turn
+Seat 7: PokerRog folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448556955: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level I (10/20) - 2026/10/19 14:14:41 ET
+Table '4040939869 1' 9-max Seat #3 is the button
+Seat 1: zaroizinho (1561 in chips) 
+Seat 2: VicLong80 (1484 in chips) 
+Seat 3: ritter7777 (1464 in chips) 
+Seat 4: BigFatBubble (1454 in chips) 
+Seat 5: 4973509 (1494 in chips) 
+Seat 6: Tunico06 (1454 in chips) 
+Seat 7: PokerRog (1601 in chips) 
+Seat 8: pinkysz (1494 in chips) 
+Seat 9: EdWinsStuff (1494 in chips) 
+zaroizinho: posts the ante 3
+VicLong80: posts the ante 3
+ritter7777: posts the ante 3
+BigFatBubble: posts the ante 3
+4973509: posts the ante 3
+Tunico06: posts the ante 3
+PokerRog: posts the ante 3
+pinkysz: posts the ante 3
+EdWinsStuff: posts the ante 3
+BigFatBubble: posts small blind 10
+4973509: posts big blind 20
+*** HOLE CARDS ***
+Dealt to zaroizinho [6h 8c]
+Tunico06: folds 
+PokerRog: folds 
+pinkysz: folds 
+EdWinsStuff: raises 20 to 40
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: calls 30
+4973509: folds 
+*** FLOP *** [Kc 8h 7d]
+BigFatBubble: checks 
+EdWinsStuff: bets 104
+BigFatBubble: folds 
+Uncalled bet (104) returned to EdWinsStuff
+EdWinsStuff collected 127 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 127 | Rake 0 
+Board [Kc 8h 7d]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 (button) folded before Flop (didn't bet)
+Seat 4: BigFatBubble (small blind) folded on the Flop
+Seat 5: 4973509 (big blind) folded before Flop
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff collected (127)
+
+
+
+PokerStars Hand #262448563071: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level I (10/20) - 2026/10/19 14:15:11 ET
+Table '4040939869 1' 9-max Seat #4 is the button
+Seat 1: zaroizinho (1558 in chips) 
+Seat 2: VicLong80 (1481 in chips) 
+Seat 3: ritter7777 (1461 in chips) 
+Seat 4: BigFatBubble (1411 in chips) 
+Seat 5: 4973509 (1471 in chips) 
+Seat 6: Tunico06 (1451 in chips) 
+Seat 7: PokerRog (1598 in chips) 
+Seat 8: pinkysz (1491 in chips) 
+Seat 9: EdWinsStuff (1578 in chips) 
+zaroizinho: posts the ante 3
+VicLong80: posts the ante 3
+ritter7777: posts the ante 3
+BigFatBubble: posts the ante 3
+4973509: posts the ante 3
+Tunico06: posts the ante 3
+PokerRog: posts the ante 3
+pinkysz: posts the ante 3
+EdWinsStuff: posts the ante 3
+4973509: posts small blind 10
+Tunico06: posts big blind 20
+*** HOLE CARDS ***
+Dealt to zaroizinho [3c 9h]
+PokerRog: folds 
+pinkysz: folds 
+EdWinsStuff: raises 20 to 40
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: folds 
+4973509: folds 
+Tunico06: calls 20
+*** FLOP *** [4h 9c 6h]
+Tunico06: checks 
+EdWinsStuff: checks 
+*** TURN *** [4h 9c 6h] [Ac]
+Tunico06: checks 
+EdWinsStuff: bets 79
+Tunico06: calls 79
+*** RIVER *** [4h 9c 6h Ac] [As]
+Tunico06: checks 
+EdWinsStuff: bets 200
+Tunico06: folds 
+Uncalled bet (200) returned to EdWinsStuff
+EdWinsStuff collected 275 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 275 | Rake 0 
+Board [4h 9c 6h Ac As]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble (button) folded before Flop (didn't bet)
+Seat 5: 4973509 (small blind) folded before Flop
+Seat 6: Tunico06 (big blind) folded on the River
+Seat 7: PokerRog folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff collected (275)
+
+
+
+PokerStars Hand #262448583718: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level I (10/20) - 2026/10/19 14:16:53 ET
+Table '4040939869 1' 9-max Seat #5 is the button
+Seat 1: zaroizinho (1555 in chips) 
+Seat 2: VicLong80 (1478 in chips) 
+Seat 3: ritter7777 (1458 in chips) 
+Seat 4: BigFatBubble (1408 in chips) 
+Seat 5: 4973509 (1458 in chips) 
+Seat 6: Tunico06 (1329 in chips) 
+Seat 7: PokerRog (1595 in chips) 
+Seat 8: pinkysz (1488 in chips) 
+Seat 9: EdWinsStuff (1731 in chips) 
+zaroizinho: posts the ante 3
+VicLong80: posts the ante 3
+ritter7777: posts the ante 3
+BigFatBubble: posts the ante 3
+4973509: posts the ante 3
+Tunico06: posts the ante 3
+PokerRog: posts the ante 3
+pinkysz: posts the ante 3
+EdWinsStuff: posts the ante 3
+Tunico06: posts small blind 10
+PokerRog: posts big blind 20
+*** HOLE CARDS ***
+Dealt to zaroizinho [8s 9c]
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: folds 
+4973509: folds 
+Tunico06: folds 
+Uncalled bet (10) returned to PokerRog
+PokerRog collected 47 from pot
+PokerRog: doesn't show hand 
+*** SUMMARY ***
+Total pot 47 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 5: 4973509 (button) folded before Flop (didn't bet)
+Seat 6: Tunico06 (small blind) folded before Flop
+Seat 7: PokerRog (big blind) collected (47)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448587464: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level I (10/20) - 2026/10/19 14:17:12 ET
+Table '4040939869 1' 9-max Seat #6 is the button
+Seat 1: zaroizinho (1552 in chips) 
+Seat 2: VicLong80 (1475 in chips) 
+Seat 3: ritter7777 (1455 in chips) 
+Seat 4: BigFatBubble (1405 in chips) 
+Seat 5: 4973509 (1455 in chips) 
+Seat 6: Tunico06 (1316 in chips) 
+Seat 7: PokerRog (1629 in chips) 
+Seat 8: pinkysz (1485 in chips) 
+Seat 9: EdWinsStuff (1728 in chips) 
+zaroizinho: posts the ante 3
+VicLong80: posts the ante 3
+ritter7777: posts the ante 3
+BigFatBubble: posts the ante 3
+4973509: posts the ante 3
+Tunico06: posts the ante 3
+PokerRog: posts the ante 3
+pinkysz: posts the ante 3
+EdWinsStuff: posts the ante 3
+PokerRog: posts small blind 10
+pinkysz: posts big blind 20
+*** HOLE CARDS ***
+Dealt to zaroizinho [7d 4d]
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: calls 20
+ritter7777: folds 
+BigFatBubble: calls 20
+4973509: calls 20
+Tunico06: folds 
+PokerRog: raises 127 to 147
+pinkysz: folds 
+VicLong80: folds 
+BigFatBubble: calls 127
+4973509: calls 127
+*** FLOP *** [9h Ad 6d]
+PokerRog: bets 147
+BigFatBubble: calls 147
+4973509: folds 
+*** TURN *** [9h Ad 6d] [Qh]
+PokerRog: bets 375
+BigFatBubble: calls 375
+*** RIVER *** [9h Ad 6d Qh] [5h]
+PokerRog: checks 
+BigFatBubble: bets 80
+PokerRog: calls 80
+*** SHOW DOWN ***
+BigFatBubble: shows [Ah Qd] (two pair, Aces and Queens)
+PokerRog: mucks hand 
+BigFatBubble collected 1712 from pot
+*** SUMMARY ***
+Total pot 1712 | Rake 0 
+Board [9h Ad 6d Qh 5h]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble showed [Ah Qd] and won (1712) with two pair, Aces and Queens
+Seat 5: 4973509 folded on the Flop
+Seat 6: Tunico06 (button) folded before Flop (didn't bet)
+Seat 7: PokerRog (small blind) mucked [Jc Jh]
+Seat 8: pinkysz (big blind) folded before Flop
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448601786: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level II (15/30) - 2026/10/19 14:18:23 ET
+Table '4040939869 1' 9-max Seat #7 is the button
+Seat 1: zaroizinho (1549 in chips) 
+Seat 2: VicLong80 (1452 in chips) 
+Seat 3: ritter7777 (1452 in chips) 
+Seat 4: BigFatBubble (2365 in chips) 
+Seat 5: 4973509 (1305 in chips) 
+Seat 6: Tunico06 (1313 in chips) 
+Seat 7: PokerRog (877 in chips) 
+Seat 8: pinkysz (1462 in chips) 
+Seat 9: EdWinsStuff (1725 in chips) 
+zaroizinho: posts the ante 4
+VicLong80: posts the ante 4
+ritter7777: posts the ante 4
+BigFatBubble: posts the ante 4
+4973509: posts the ante 4
+Tunico06: posts the ante 4
+PokerRog: posts the ante 4
+pinkysz: posts the ante 4
+EdWinsStuff: posts the ante 4
+pinkysz: posts small blind 15
+EdWinsStuff: posts big blind 30
+*** HOLE CARDS ***
+Dealt to zaroizinho [Jc 6c]
+zaroizinho: folds 
+VicLong80: calls 30
+ritter7777: folds 
+BigFatBubble: calls 30
+4973509: calls 30
+Tunico06: folds 
+PokerRog: folds 
+pinkysz: folds 
+EdWinsStuff: checks 
+*** FLOP *** [Jh 3c As]
+EdWinsStuff: checks 
+VicLong80: checks 
+BigFatBubble: checks 
+4973509: checks 
+*** TURN *** [Jh 3c As] [8s]
+EdWinsStuff: checks 
+VicLong80: checks 
+BigFatBubble: bets 60
+4973509: raises 60 to 120
+EdWinsStuff: folds 
+VicLong80: folds 
+BigFatBubble: folds 
+Uncalled bet (60) returned to 4973509
+4973509 collected 291 from pot
+*** SUMMARY ***
+Total pot 291 | Rake 0 
+Board [Jh 3c As 8s]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded on the Turn
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble folded on the Turn
+Seat 5: 4973509 collected (291)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog (button) folded before Flop (didn't bet)
+Seat 8: pinkysz (small blind) folded before Flop
+Seat 9: EdWinsStuff (big blind) folded on the Turn
+
+
+
+PokerStars Hand #262448613507: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level II (15/30) - 2026/10/19 14:19:22 ET
+Table '4040939869 1' 9-max Seat #8 is the button
+Seat 1: zaroizinho (1545 in chips) 
+Seat 2: VicLong80 (1418 in chips) 
+Seat 3: ritter7777 (1448 in chips) 
+Seat 4: BigFatBubble (2271 in chips) 
+Seat 5: 4973509 (1502 in chips) 
+Seat 6: Tunico06 (1309 in chips) 
+Seat 7: PokerRog (873 in chips) 
+Seat 8: pinkysz (1443 in chips) 
+Seat 9: EdWinsStuff (1691 in chips) 
+zaroizinho: posts the ante 4
+VicLong80: posts the ante 4
+ritter7777: posts the ante 4
+BigFatBubble: posts the ante 4
+4973509: posts the ante 4
+Tunico06: posts the ante 4
+PokerRog: posts the ante 4
+pinkysz: posts the ante 4
+EdWinsStuff: posts the ante 4
+EdWinsStuff: posts small blind 15
+zaroizinho: posts big blind 30
+*** HOLE CARDS ***
+Dealt to zaroizinho [Js 8c]
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: folds 
+4973509: calls 30
+Tunico06: folds 
+PokerRog: raises 60 to 90
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+4973509: calls 60
+*** FLOP *** [9c 4c Qs]
+4973509: checks 
+PokerRog: bets 90
+4973509: folds 
+Uncalled bet (90) returned to PokerRog
+PokerRog collected 261 from pot
+PokerRog: doesn't show hand 
+*** SUMMARY ***
+Total pot 261 | Rake 0 
+Board [9c 4c Qs]
+Seat 1: zaroizinho (big blind) folded before Flop
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 5: 4973509 folded on the Flop
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog collected (261)
+Seat 8: pinkysz (button) folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (small blind) folded before Flop
+
+
+
+PokerStars Hand #262448620738: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level II (15/30) - 2026/10/19 14:19:57 ET
+Table '4040939869 1' 9-max Seat #9 is the button
+Seat 1: zaroizinho (1511 in chips) 
+Seat 2: VicLong80 (1414 in chips) 
+Seat 3: ritter7777 (1444 in chips) 
+Seat 4: BigFatBubble (2267 in chips) 
+Seat 5: 4973509 (1408 in chips) 
+Seat 6: Tunico06 (1305 in chips) 
+Seat 7: PokerRog (1040 in chips) 
+Seat 8: pinkysz (1439 in chips) 
+Seat 9: EdWinsStuff (1672 in chips) 
+zaroizinho: posts the ante 4
+VicLong80: posts the ante 4
+ritter7777: posts the ante 4
+BigFatBubble: posts the ante 4
+4973509: posts the ante 4
+Tunico06: posts the ante 4
+PokerRog: posts the ante 4
+pinkysz: posts the ante 4
+EdWinsStuff: posts the ante 4
+zaroizinho: posts small blind 15
+VicLong80: posts big blind 30
+*** HOLE CARDS ***
+Dealt to zaroizinho [Qc 3d]
+ritter7777: calls 30
+BigFatBubble: calls 30
+4973509: calls 30
+Tunico06: folds 
+PokerRog: folds 
+pinkysz: folds 
+EdWinsStuff: raises 60 to 90
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: calls 60
+BigFatBubble: folds 
+4973509: calls 60
+*** FLOP *** [Ah 2h 6c]
+ritter7777: bets 381
+4973509: raises 933 to 1314 and is all-in
+EdWinsStuff: folds 
+ritter7777: calls 933
+*** TURN *** [Ah 2h 6c] [5d]
+*** RIVER *** [Ah 2h 6c 5d] [3c]
+*** SHOW DOWN ***
+ritter7777: shows [Ad 9d] (a pair of Aces)
+4973509: shows [6d Ac] (two pair, Aces and Sixes)
+4973509 collected 3009 from pot
+*** SUMMARY ***
+Total pot 3009 | Rake 0 
+Board [Ah 2h 6c 5d 3c]
+Seat 1: zaroizinho (small blind) folded before Flop
+Seat 2: VicLong80 (big blind) folded before Flop
+Seat 3: ritter7777 showed [Ad 9d] and lost with a pair of Aces
+Seat 4: BigFatBubble folded before Flop
+Seat 5: 4973509 showed [6d Ac] and won (3009) with two pair, Aces and Sixes
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (button) folded on the Flop
+
+
+
+PokerStars Hand #262448633713: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level II (15/30) - 2026/10/19 14:21:01 ET
+Table '4040939869 1' 9-max Seat #1 is the button
+Seat 1: zaroizinho (1492 in chips) 
+Seat 2: VicLong80 (1380 in chips) 
+Seat 3: ritter7777 (36 in chips) 
+Seat 4: BigFatBubble (2233 in chips) 
+Seat 5: 4973509 (3009 in chips) 
+Seat 6: Tunico06 (1301 in chips) 
+Seat 7: PokerRog (1036 in chips) 
+Seat 8: pinkysz (1435 in chips) 
+Seat 9: EdWinsStuff (1578 in chips) 
+zaroizinho: posts the ante 4
+VicLong80: posts the ante 4
+ritter7777: posts the ante 4
+BigFatBubble: posts the ante 4
+4973509: posts the ante 4
+Tunico06: posts the ante 4
+PokerRog: posts the ante 4
+pinkysz: posts the ante 4
+EdWinsStuff: posts the ante 4
+VicLong80: posts small blind 15
+ritter7777: posts big blind 30
+*** HOLE CARDS ***
+Dealt to zaroizinho [7c Kh]
+BigFatBubble: folds 
+4973509: calls 30
+Tunico06: calls 30
+PokerRog: calls 30
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: checks 
+*** FLOP *** [2h Jc 6c]
+ritter7777: checks 
+4973509: checks 
+Tunico06: checks 
+PokerRog: checks 
+*** TURN *** [2h Jc 6c] [7h]
+ritter7777: checks 
+4973509: bets 60
+Tunico06: folds 
+PokerRog: calls 60
+ritter7777: calls 2 and is all-in
+*** RIVER *** [2h Jc 6c 7h] [2d]
+4973509: checks 
+PokerRog: checks 
+*** SHOW DOWN ***
+4973509: shows [Qh 5h] (a pair of Deuces)
+PokerRog: mucks hand 
+4973509 collected 116 from side pot
+ritter7777: shows [Qc 3d] (a pair of Deuces)
+ritter7777 collected 89 from main pot
+4973509 collected 88 from main pot
+*** SUMMARY ***
+Total pot 293 Main pot 177. Side pot 116. | Rake 0 
+Board [2h Jc 6c 7h 2d]
+Seat 1: zaroizinho (button) folded before Flop (didn't bet)
+Seat 2: VicLong80 (small blind) folded before Flop
+Seat 3: ritter7777 (big blind) showed [Qc 3d] and won (89) with a pair of Deuces
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 5: 4973509 showed [Qh 5h] and won (204) with a pair of Deuces
+Seat 6: Tunico06 folded on the Turn
+Seat 7: PokerRog mucked [Td 8c]
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448646222: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level II (15/30) - 2026/10/19 14:22:03 ET
+Table '4040939869 1' 9-max Seat #2 is the button
+Seat 1: zaroizinho (1488 in chips) 
+Seat 2: VicLong80 (1361 in chips) 
+Seat 3: ritter7777 (89 in chips) 
+Seat 4: BigFatBubble (2229 in chips) 
+Seat 5: 4973509 (3119 in chips) 
+Seat 6: Tunico06 (1267 in chips) 
+Seat 7: PokerRog (942 in chips) 
+Seat 8: pinkysz (1431 in chips) 
+Seat 9: EdWinsStuff (1574 in chips) 
+zaroizinho: posts the ante 4
+VicLong80: posts the ante 4
+ritter7777: posts the ante 4
+BigFatBubble: posts the ante 4
+4973509: posts the ante 4
+Tunico06: posts the ante 4
+PokerRog: posts the ante 4
+pinkysz: posts the ante 4
+EdWinsStuff: posts the ante 4
+ritter7777: posts small blind 15
+BigFatBubble: posts big blind 30
+*** HOLE CARDS ***
+Dealt to zaroizinho [Jh 7h]
+4973509: folds 
+Tunico06: folds 
+PokerRog: calls 30
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: raises 55 to 85 and is all-in
+BigFatBubble: calls 55
+PokerRog: calls 55
+*** FLOP *** [3s As 4h]
+BigFatBubble: checks 
+PokerRog: checks 
+*** TURN *** [3s As 4h] [8d]
+BigFatBubble: checks 
+PokerRog: checks 
+*** RIVER *** [3s As 4h 8d] [Ah]
+BigFatBubble: checks 
+PokerRog: checks 
+*** SHOW DOWN ***
+ritter7777: shows [Ac 6h] (three of a kind, Aces)
+BigFatBubble: mucks hand 
+PokerRog: mucks hand 
+ritter7777 collected 291 from pot
+*** SUMMARY ***
+Total pot 291 | Rake 0 
+Board [3s As 4h 8d Ah]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 (button) folded before Flop (didn't bet)
+Seat 3: ritter7777 (small blind) showed [Ac 6h] and won (291) with three of a kind, Aces
+Seat 4: BigFatBubble (big blind) mucked [7s 9d]
+Seat 5: 4973509 folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog mucked [2d 4d]
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448661033: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level III (25/50) - 2026/10/19 14:23:17 ET
+Table '4040939869 1' 9-max Seat #3 is the button
+Seat 1: zaroizinho (1484 in chips) 
+Seat 2: VicLong80 (1357 in chips) 
+Seat 3: ritter7777 (291 in chips) 
+Seat 4: BigFatBubble (2140 in chips) 
+Seat 5: 4973509 (3115 in chips) 
+Seat 6: Tunico06 (1263 in chips) 
+Seat 7: PokerRog (853 in chips) 
+Seat 8: pinkysz (1427 in chips) 
+Seat 9: EdWinsStuff (1570 in chips) 
+zaroizinho: posts the ante 6
+VicLong80: posts the ante 6
+ritter7777: posts the ante 6
+BigFatBubble: posts the ante 6
+4973509: posts the ante 6
+Tunico06: posts the ante 6
+PokerRog: posts the ante 6
+pinkysz: posts the ante 6
+EdWinsStuff: posts the ante 6
+BigFatBubble: posts small blind 25
+4973509: posts big blind 50
+*** HOLE CARDS ***
+Dealt to zaroizinho [4d 2h]
+Tunico06: folds 
+PokerRog: folds 
+pinkysz: folds 
+EdWinsStuff: raises 50 to 100
+zaroizinho: folds 
+VicLong80: raises 400 to 500
+ritter7777: folds 
+BigFatBubble: folds 
+4973509: folds 
+EdWinsStuff: folds 
+Uncalled bet (400) returned to VicLong80
+VicLong80 collected 329 from pot
+*** SUMMARY ***
+Total pot 329 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 collected (329)
+Seat 3: ritter7777 (button) folded before Flop (didn't bet)
+Seat 4: BigFatBubble (small blind) folded before Flop
+Seat 5: 4973509 (big blind) folded before Flop
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop
+
+
+
+PokerStars Hand #262448671237: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level III (25/50) - 2026/10/19 14:24:08 ET
+Table '4040939869 1' 9-max Seat #4 is the button
+Seat 1: zaroizinho (1478 in chips) 
+Seat 2: VicLong80 (1580 in chips) 
+Seat 3: ritter7777 (285 in chips) 
+Seat 4: BigFatBubble (2109 in chips) 
+Seat 5: 4973509 (3059 in chips) 
+Seat 6: Tunico06 (1257 in chips) 
+Seat 7: PokerRog (847 in chips) 
+Seat 8: pinkysz (1421 in chips) 
+Seat 9: EdWinsStuff (1464 in chips) 
+zaroizinho: posts the ante 6
+VicLong80: posts the ante 6
+ritter7777: posts the ante 6
+BigFatBubble: posts the ante 6
+4973509: posts the ante 6
+Tunico06: posts the ante 6
+PokerRog: posts the ante 6
+pinkysz: posts the ante 6
+EdWinsStuff: posts the ante 6
+4973509: posts small blind 25
+Tunico06: posts big blind 50
+*** HOLE CARDS ***
+Dealt to zaroizinho [7d 5s]
+PokerRog: folds 
+pinkysz: raises 100 to 150
+EdWinsStuff: folds 
+zaroizinho has timed out
+zaroizinho: folds 
+zaroizinho is sitting out
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: folds 
+4973509: calls 125
+Tunico06: folds 
+*** FLOP *** [Ac 9c 7c]
+4973509: checks 
+pinkysz: bets 182
+4973509: calls 182
+*** TURN *** [Ac 9c 7c] [Jc]
+4973509: bets 100
+pinkysz: calls 100
+*** RIVER *** [Ac 9c 7c Jc] [Js]
+4973509: checks 
+pinkysz: bets 629
+4973509: calls 629
+*** SHOW DOWN ***
+pinkysz: shows [Jh As] (a full house, Jacks full of Aces)
+4973509: mucks hand 
+pinkysz collected 2226 from pot
+*** SUMMARY ***
+Total pot 2226 | Rake 0 
+Board [Ac 9c 7c Jc Js]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble (button) folded before Flop (didn't bet)
+Seat 5: 4973509 (small blind) mucked [6d 6c]
+Seat 6: Tunico06 (big blind) folded before Flop
+Seat 7: PokerRog folded before Flop (didn't bet)
+Seat 8: pinkysz showed [Jh As] and won (2226) with a full house, Jacks full of Aces
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448697821: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level III (25/50) - 2026/10/19 14:26:21 ET
+Table '4040939869 1' 9-max Seat #5 is the button
+Seat 1: zaroizinho (1472 in chips) is sitting out
+Seat 2: VicLong80 (1574 in chips) 
+Seat 3: ritter7777 (279 in chips) 
+Seat 4: BigFatBubble (2103 in chips) 
+Seat 5: 4973509 (1992 in chips) 
+Seat 6: Tunico06 (1201 in chips) 
+Seat 7: PokerRog (841 in chips) 
+Seat 8: pinkysz (2580 in chips) 
+Seat 9: EdWinsStuff (1458 in chips) 
+zaroizinho: posts the ante 6
+VicLong80: posts the ante 6
+ritter7777: posts the ante 6
+BigFatBubble: posts the ante 6
+4973509: posts the ante 6
+Tunico06: posts the ante 6
+PokerRog: posts the ante 6
+pinkysz: posts the ante 6
+EdWinsStuff: posts the ante 6
+Tunico06: posts small blind 25
+PokerRog: posts big blind 50
+*** HOLE CARDS ***
+Dealt to zaroizinho [8c 2d]
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: raises 50 to 100
+ritter7777: folds 
+BigFatBubble: raises 50 to 150
+4973509: calls 150
+Tunico06: folds 
+PokerRog: folds 
+VicLong80: calls 50
+*** FLOP *** [Ac Kc Ts]
+VicLong80: checks 
+BigFatBubble: checks 
+4973509: checks 
+*** TURN *** [Ac Kc Ts] [9s]
+VicLong80: bets 100
+BigFatBubble: calls 100
+4973509: calls 100
+*** RIVER *** [Ac Kc Ts 9s] [7s]
+VicLong80: checks 
+BigFatBubble: checks 
+4973509: checks 
+*** SHOW DOWN ***
+VicLong80: shows [Js Ks] (a flush, King high)
+BigFatBubble: mucks hand 
+4973509: mucks hand 
+VicLong80 collected 879 from pot
+*** SUMMARY ***
+Total pot 879 | Rake 0 
+Board [Ac Kc Ts 9s 7s]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 showed [Js Ks] and won (879) with a flush, King high
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble mucked [Qh Qs]
+Seat 5: 4973509 (button) mucked [3d Ad]
+Seat 6: Tunico06 (small blind) folded before Flop
+Seat 7: PokerRog (big blind) folded before Flop
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448708298: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level III (25/50) - 2026/10/19 14:27:14 ET
+Table '4040939869 1' 9-max Seat #6 is the button
+Seat 1: zaroizinho (1466 in chips) is sitting out
+Seat 2: VicLong80 (2197 in chips) 
+Seat 3: ritter7777 (273 in chips) 
+Seat 4: BigFatBubble (1847 in chips) 
+Seat 5: 4973509 (1736 in chips) 
+Seat 6: Tunico06 (1170 in chips) 
+Seat 7: PokerRog (785 in chips) 
+Seat 8: pinkysz (2574 in chips) 
+Seat 9: EdWinsStuff (1452 in chips) 
+zaroizinho: posts the ante 6
+VicLong80: posts the ante 6
+ritter7777: posts the ante 6
+BigFatBubble: posts the ante 6
+4973509: posts the ante 6
+Tunico06: posts the ante 6
+PokerRog: posts the ante 6
+pinkysz: posts the ante 6
+EdWinsStuff: posts the ante 6
+PokerRog: posts small blind 25
+pinkysz: posts big blind 50
+*** HOLE CARDS ***
+Dealt to zaroizinho [9c 4c]
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: calls 50
+4973509: folds 
+Tunico06: folds 
+PokerRog: calls 25
+pinkysz: raises 200 to 250
+BigFatBubble: calls 200
+PokerRog: folds 
+*** FLOP *** [Kd Js 2h]
+pinkysz: bets 272
+BigFatBubble: folds 
+Uncalled bet (272) returned to pinkysz
+pinkysz collected 604 from pot
+pinkysz: doesn't show hand 
+*** SUMMARY ***
+Total pot 604 | Rake 0 
+Board [Kd Js 2h]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble folded on the Flop
+Seat 5: 4973509 folded before Flop (didn't bet)
+Seat 6: Tunico06 (button) folded before Flop (didn't bet)
+Seat 7: PokerRog (small blind) folded before Flop
+Seat 8: pinkysz (big blind) collected (604)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448716928: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level III (25/50) - 2026/10/19 14:27:57 ET
+Table '4040939869 1' 9-max Seat #7 is the button
+Seat 1: zaroizinho (1460 in chips) is sitting out
+Seat 2: VicLong80 (2191 in chips) 
+Seat 3: ritter7777 (267 in chips) 
+Seat 4: BigFatBubble (1591 in chips) 
+Seat 5: 4973509 (1730 in chips) 
+Seat 6: Tunico06 (1164 in chips) 
+Seat 7: PokerRog (729 in chips) 
+Seat 8: pinkysz (2922 in chips) 
+Seat 9: EdWinsStuff (1446 in chips) 
+zaroizinho: posts the ante 6
+VicLong80: posts the ante 6
+ritter7777: posts the ante 6
+BigFatBubble: posts the ante 6
+4973509: posts the ante 6
+Tunico06: posts the ante 6
+PokerRog: posts the ante 6
+pinkysz: posts the ante 6
+EdWinsStuff: posts the ante 6
+pinkysz: posts small blind 25
+EdWinsStuff: posts big blind 50
+*** HOLE CARDS ***
+Dealt to zaroizinho [Qs 2h]
+zaroizinho: folds 
+VicLong80: raises 100 to 150
+ritter7777: folds 
+BigFatBubble: folds 
+4973509: calls 150
+Tunico06: folds 
+PokerRog: folds 
+pinkysz: folds 
+EdWinsStuff: calls 100
+*** FLOP *** [4c 3h Tc]
+EdWinsStuff: bets 365
+VicLong80: folds 
+4973509: folds 
+Uncalled bet (365) returned to EdWinsStuff
+EdWinsStuff collected 529 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 529 | Rake 0 
+Board [4c 3h Tc]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded on the Flop
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 5: 4973509 folded on the Flop
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog (button) folded before Flop (didn't bet)
+Seat 8: pinkysz (small blind) folded before Flop
+Seat 9: EdWinsStuff (big blind) collected (529)
+
+
+
+PokerStars Hand #262448727319: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level IV (40/80) - 2026/10/19 14:28:49 ET
+Table '4040939869 1' 9-max Seat #8 is the button
+Seat 1: zaroizinho (1454 in chips) is sitting out
+Seat 2: VicLong80 (2035 in chips) 
+Seat 3: ritter7777 (261 in chips) 
+Seat 4: BigFatBubble (1585 in chips) 
+Seat 5: 4973509 (1574 in chips) 
+Seat 6: Tunico06 (1158 in chips) 
+Seat 7: PokerRog (723 in chips) 
+Seat 8: pinkysz (2891 in chips) 
+Seat 9: EdWinsStuff (1819 in chips) 
+zaroizinho: posts the ante 10
+VicLong80: posts the ante 10
+ritter7777: posts the ante 10
+BigFatBubble: posts the ante 10
+4973509: posts the ante 10
+Tunico06: posts the ante 10
+PokerRog: posts the ante 10
+pinkysz: posts the ante 10
+EdWinsStuff: posts the ante 10
+EdWinsStuff: posts small blind 40
+zaroizinho: posts big blind 80
+*** HOLE CARDS ***
+Dealt to zaroizinho [7d 9c]
+VicLong80: raises 160 to 240
+ritter7777: raises 11 to 251 and is all-in
+BigFatBubble: folds 
+4973509: calls 251
+Tunico06: folds 
+PokerRog: calls 251
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: calls 11
+*** FLOP *** [8d 4s 3h]
+VicLong80: bets 160
+4973509: calls 160
+PokerRog: calls 160
+*** TURN *** [8d 4s 3h] [Jh]
+VicLong80: checks 
+4973509: checks 
+PokerRog: bets 302 and is all-in
+VicLong80: calls 302
+4973509: calls 302
+*** RIVER *** [8d 4s 3h Jh] [As]
+VicLong80: bets 1312 and is all-in
+4973509: calls 851 and is all-in
+Uncalled bet (461) returned to VicLong80
+*** SHOW DOWN ***
+VicLong80: shows [Kd Ad] (a pair of Aces)
+4973509: shows [Qh Ac] (a pair of Aces - lower kicker)
+VicLong80 collected 1702 from side pot-2 
+PokerRog: shows [2h Ah] (a pair of Aces - lower kicker)
+VicLong80 collected 1386 from side pot-1 
+ritter7777: shows [Js Jc] (three of a kind, Jacks)
+ritter7777 collected 1214 from main pot
+4973509 finished the tournament in 8th place
+PokerRog finished the tournament in 9th place
+*** SUMMARY ***
+Total pot 4302 Main pot 1214. Side pot-1 1386. Side pot-2 1702. | Rake 0 
+Board [8d 4s 3h Jh As]
+Seat 1: zaroizinho (big blind) folded before Flop
+Seat 2: VicLong80 showed [Kd Ad] and won (3088) with a pair of Aces
+Seat 3: ritter7777 showed [Js Jc] and won (1214) with three of a kind, Jacks
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 5: 4973509 showed [Qh Ac] and lost with a pair of Aces
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 7: PokerRog showed [2h Ah] and lost with a pair of Aces
+Seat 8: pinkysz (button) folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (small blind) folded before Flop
+
+
+
+PokerStars Hand #262448737643: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level IV (40/80) - 2026/10/19 14:29:41 ET
+Table '4040939869 1' 9-max Seat #9 is the button
+Seat 1: zaroizinho (1364 in chips) is sitting out
+Seat 2: VicLong80 (3549 in chips) 
+Seat 3: ritter7777 (1214 in chips) 
+Seat 4: BigFatBubble (1575 in chips) 
+Seat 6: Tunico06 (1148 in chips) 
+Seat 8: pinkysz (2881 in chips) 
+Seat 9: EdWinsStuff (1769 in chips) 
+zaroizinho: posts the ante 10
+VicLong80: posts the ante 10
+ritter7777: posts the ante 10
+BigFatBubble: posts the ante 10
+Tunico06: posts the ante 10
+pinkysz: posts the ante 10
+EdWinsStuff: posts the ante 10
+zaroizinho: posts small blind 40
+VicLong80: posts big blind 80
+*** HOLE CARDS ***
+Dealt to zaroizinho [4c 4s]
+ritter7777: raises 270 to 350
+BigFatBubble: folds 
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+Uncalled bet (270) returned to ritter7777
+ritter7777 collected 270 from pot
+*** SUMMARY ***
+Total pot 270 | Rake 0 
+Seat 1: zaroizinho (small blind) folded before Flop
+Seat 2: VicLong80 (big blind) folded before Flop
+Seat 3: ritter7777 collected (270)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (button) folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448744309: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level IV (40/80) - 2026/10/19 14:30:13 ET
+Table '4040939869 1' 9-max Seat #1 is the button
+Seat 1: zaroizinho (1314 in chips) is sitting out
+Seat 2: VicLong80 (3459 in chips) 
+Seat 3: ritter7777 (1394 in chips) 
+Seat 4: BigFatBubble (1565 in chips) 
+Seat 6: Tunico06 (1138 in chips) 
+Seat 8: pinkysz (2871 in chips) 
+Seat 9: EdWinsStuff (1759 in chips) 
+zaroizinho: posts the ante 10
+VicLong80: posts the ante 10
+ritter7777: posts the ante 10
+BigFatBubble: posts the ante 10
+Tunico06: posts the ante 10
+pinkysz: posts the ante 10
+EdWinsStuff: posts the ante 10
+VicLong80: posts small blind 40
+ritter7777: posts big blind 80
+*** HOLE CARDS ***
+Dealt to zaroizinho [4d Qc]
+BigFatBubble: folds 
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: raises 160 to 240
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+Uncalled bet (160) returned to EdWinsStuff
+EdWinsStuff collected 270 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 270 | Rake 0 
+Seat 1: zaroizinho (button) folded before Flop (didn't bet)
+Seat 2: VicLong80 (small blind) folded before Flop
+Seat 3: ritter7777 (big blind) folded before Flop
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff collected (270)
+
+
+
+PokerStars Hand #262448749793: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level IV (40/80) - 2026/10/19 14:30:40 ET
+Table '4040939869 1' 9-max Seat #2 is the button
+Seat 1: zaroizinho (1304 in chips) is sitting out
+Seat 2: VicLong80 (3409 in chips) 
+Seat 3: ritter7777 (1304 in chips) 
+Seat 4: BigFatBubble (1555 in chips) 
+Seat 6: Tunico06 (1128 in chips) 
+Seat 8: pinkysz (2861 in chips) 
+Seat 9: EdWinsStuff (1939 in chips) 
+zaroizinho: posts the ante 10
+VicLong80: posts the ante 10
+ritter7777: posts the ante 10
+BigFatBubble: posts the ante 10
+Tunico06: posts the ante 10
+pinkysz: posts the ante 10
+EdWinsStuff: posts the ante 10
+ritter7777: posts small blind 40
+BigFatBubble: posts big blind 80
+*** HOLE CARDS ***
+Dealt to zaroizinho [Kh Js]
+Tunico06: raises 80 to 160
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: raises 80 to 240
+Tunico06: calls 80
+*** FLOP *** [Kd 4h 2h]
+BigFatBubble: checks 
+Tunico06: checks 
+*** TURN *** [Kd 4h 2h] [Tc]
+BigFatBubble: bets 80
+Tunico06: calls 80
+*** RIVER *** [Kd 4h 2h Tc] [6h]
+BigFatBubble: bets 160
+Tunico06: calls 160
+*** SHOW DOWN ***
+BigFatBubble: shows [Ks Kc] (three of a kind, Kings)
+Tunico06: mucks hand 
+BigFatBubble collected 1070 from pot
+*** SUMMARY ***
+Total pot 1070 | Rake 0 
+Board [Kd 4h 2h Tc 6h]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 (button) folded before Flop (didn't bet)
+Seat 3: ritter7777 (small blind) folded before Flop
+Seat 4: BigFatBubble (big blind) showed [Ks Kc] and won (1070) with three of a kind, Kings
+Seat 6: Tunico06 mucked [Td Ad]
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448757435: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level IV (40/80) - 2026/10/19 14:31:16 ET
+Table '4040939869 1' 9-max Seat #3 is the button
+Seat 1: zaroizinho (1294 in chips) is sitting out
+Seat 2: VicLong80 (3399 in chips) 
+Seat 3: ritter7777 (1254 in chips) 
+Seat 4: BigFatBubble (2135 in chips) 
+Seat 6: Tunico06 (638 in chips) 
+Seat 8: pinkysz (2851 in chips) 
+Seat 9: EdWinsStuff (1929 in chips) 
+zaroizinho: posts the ante 10
+VicLong80: posts the ante 10
+ritter7777: posts the ante 10
+BigFatBubble: posts the ante 10
+Tunico06: posts the ante 10
+pinkysz: posts the ante 10
+EdWinsStuff: posts the ante 10
+BigFatBubble: posts small blind 40
+Tunico06: posts big blind 80
+*** HOLE CARDS ***
+Dealt to zaroizinho [Ac 5d]
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: calls 40
+Tunico06: raises 548 to 628 and is all-in
+BigFatBubble: calls 548
+*** FLOP *** [8h Jd 9s]
+*** TURN *** [8h Jd 9s] [3s]
+*** RIVER *** [8h Jd 9s 3s] [7d]
+*** SHOW DOWN ***
+BigFatBubble: shows [2c 2h] (a pair of Deuces)
+Tunico06: shows [3h 3d] (three of a kind, Threes)
+Tunico06 collected 1326 from pot
+*** SUMMARY ***
+Total pot 1326 | Rake 0 
+Board [8h Jd 9s 3s 7d]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 (button) folded before Flop (didn't bet)
+Seat 4: BigFatBubble (small blind) showed [2c 2h] and lost with a pair of Deuces
+Seat 6: Tunico06 (big blind) showed [3h 3d] and won (1326) with three of a kind, Threes
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448762189: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level IV (40/80) - 2026/10/19 14:31:39 ET
+Table '4040939869 1' 9-max Seat #4 is the button
+Seat 1: zaroizinho (1284 in chips) is sitting out
+Seat 2: VicLong80 (3389 in chips) 
+Seat 3: ritter7777 (1244 in chips) 
+Seat 4: BigFatBubble (1497 in chips) 
+Seat 6: Tunico06 (1326 in chips) 
+Seat 8: pinkysz (2841 in chips) 
+Seat 9: EdWinsStuff (1919 in chips) 
+zaroizinho: posts the ante 10
+VicLong80: posts the ante 10
+ritter7777: posts the ante 10
+BigFatBubble: posts the ante 10
+Tunico06: posts the ante 10
+pinkysz: posts the ante 10
+EdWinsStuff: posts the ante 10
+Tunico06: posts small blind 40
+pinkysz: posts big blind 80
+*** HOLE CARDS ***
+Dealt to zaroizinho [2c Th]
+EdWinsStuff: raises 80 to 160
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: folds 
+Tunico06: folds 
+pinkysz: folds 
+Uncalled bet (80) returned to EdWinsStuff
+EdWinsStuff collected 270 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 270 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble (button) folded before Flop (didn't bet)
+Seat 6: Tunico06 (small blind) folded before Flop
+Seat 8: pinkysz (big blind) folded before Flop
+Seat 9: EdWinsStuff collected (270)
+
+
+
+PokerStars Hand #262448768504: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level IV (40/80) - 2026/10/19 14:32:10 ET
+Table '4040939869 1' 9-max Seat #6 is the button
+Seat 1: zaroizinho (1274 in chips) is sitting out
+Seat 2: VicLong80 (3379 in chips) 
+Seat 3: ritter7777 (1234 in chips) 
+Seat 4: BigFatBubble (1487 in chips) 
+Seat 6: Tunico06 (1276 in chips) 
+Seat 8: pinkysz (2751 in chips) 
+Seat 9: EdWinsStuff (2099 in chips) 
+zaroizinho: posts the ante 10
+VicLong80: posts the ante 10
+ritter7777: posts the ante 10
+BigFatBubble: posts the ante 10
+Tunico06: posts the ante 10
+pinkysz: posts the ante 10
+EdWinsStuff: posts the ante 10
+pinkysz: posts small blind 40
+EdWinsStuff: posts big blind 80
+*** HOLE CARDS ***
+Dealt to zaroizinho [4c As]
+zaroizinho: folds 
+VicLong80: calls 80
+ritter7777: raises 160 to 240
+BigFatBubble: folds 
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: folds 
+VicLong80: calls 160
+*** FLOP *** [3c Ac 3h]
+VicLong80: bets 160
+ritter7777: folds 
+Uncalled bet (160) returned to VicLong80
+VicLong80 collected 670 from pot
+*** SUMMARY ***
+Total pot 670 | Rake 0 
+Board [3c Ac 3h]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 collected (670)
+Seat 3: ritter7777 folded on the Flop
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 6: Tunico06 (button) folded before Flop (didn't bet)
+Seat 8: pinkysz (small blind) folded before Flop
+Seat 9: EdWinsStuff (big blind) folded before Flop
+
+
+
+PokerStars Hand #262448776020: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level IV (40/80) - 2026/10/19 14:32:47 ET
+Table '4040939869 1' 9-max Seat #8 is the button
+Seat 1: zaroizinho (1264 in chips) is sitting out
+Seat 2: VicLong80 (3799 in chips) 
+Seat 3: ritter7777 (984 in chips) 
+Seat 4: BigFatBubble (1477 in chips) 
+Seat 6: Tunico06 (1266 in chips) 
+Seat 8: pinkysz (2701 in chips) 
+Seat 9: EdWinsStuff (2009 in chips) 
+zaroizinho: posts the ante 10
+VicLong80: posts the ante 10
+ritter7777: posts the ante 10
+BigFatBubble: posts the ante 10
+Tunico06: posts the ante 10
+pinkysz: posts the ante 10
+EdWinsStuff: posts the ante 10
+EdWinsStuff: posts small blind 40
+zaroizinho: posts big blind 80
+*** HOLE CARDS ***
+Dealt to zaroizinho [7c 9c]
+VicLong80: calls 80
+ritter7777: calls 80
+BigFatBubble: calls 80
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: calls 40
+zaroizinho: folds 
+*** FLOP *** [Ks Td As]
+EdWinsStuff: checks 
+VicLong80: bets 240
+ritter7777: raises 654 to 894 and is all-in
+BigFatBubble: folds 
+EdWinsStuff: folds 
+VicLong80: calls 654
+*** TURN *** [Ks Td As] [8d]
+*** RIVER *** [Ks Td As 8d] [Qc]
+*** SHOW DOWN ***
+VicLong80: shows [9h Ac] (a pair of Aces)
+ritter7777: shows [Ts Kd] (two pair, Kings and Tens)
+ritter7777 collected 2258 from pot
+*** SUMMARY ***
+Total pot 2258 | Rake 0 
+Board [Ks Td As 8d Qc]
+Seat 1: zaroizinho (big blind) folded before Flop
+Seat 2: VicLong80 showed [9h Ac] and lost with a pair of Aces
+Seat 3: ritter7777 showed [Ts Kd] and won (2258) with two pair, Kings and Tens
+Seat 4: BigFatBubble folded on the Flop
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz (button) folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (small blind) folded on the Flop
+
+
+
+PokerStars Hand #262448783969: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:33:26 ET
+Table '4040939869 1' 9-max Seat #9 is the button
+Seat 1: zaroizinho (1174 in chips) is sitting out
+Seat 2: VicLong80 (2815 in chips) 
+Seat 3: ritter7777 (2258 in chips) 
+Seat 4: BigFatBubble (1387 in chips) 
+Seat 6: Tunico06 (1256 in chips) 
+Seat 8: pinkysz (2691 in chips) 
+Seat 9: EdWinsStuff (1919 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+zaroizinho: posts small blind 60
+VicLong80: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [7d Qd]
+ritter7777: folds 
+BigFatBubble: folds 
+Tunico06: raises 1121 to 1241 and is all-in
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+Uncalled bet (1121) returned to Tunico06
+Tunico06 collected 405 from pot
+Tunico06: doesn't show hand 
+*** SUMMARY ***
+Total pot 405 | Rake 0 
+Seat 1: zaroizinho (small blind) folded before Flop
+Seat 2: VicLong80 (big blind) folded before Flop
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 6: Tunico06 collected (405)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (button) folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448788662: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:33:49 ET
+Table '4040939869 1' 9-max Seat #1 is the button
+Seat 1: zaroizinho (1099 in chips) is sitting out
+Seat 2: VicLong80 (2680 in chips) 
+Seat 3: ritter7777 (2243 in chips) 
+Seat 4: BigFatBubble (1372 in chips) 
+Seat 6: Tunico06 (1526 in chips) 
+Seat 8: pinkysz (2676 in chips) 
+Seat 9: EdWinsStuff (1904 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+VicLong80: posts small blind 60
+ritter7777: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [5c 3s]
+BigFatBubble: folds 
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+Uncalled bet (60) returned to ritter7777
+ritter7777 collected 225 from pot
+*** SUMMARY ***
+Total pot 225 | Rake 0 
+Seat 1: zaroizinho (button) folded before Flop (didn't bet)
+Seat 2: VicLong80 (small blind) folded before Flop
+Seat 3: ritter7777 (big blind) collected (225)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448790485: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:33:58 ET
+Table '4040939869 1' 9-max Seat #2 is the button
+Seat 1: zaroizinho (1084 in chips) is sitting out
+Seat 2: VicLong80 (2605 in chips) 
+Seat 3: ritter7777 (2393 in chips) 
+Seat 4: BigFatBubble (1357 in chips) 
+Seat 6: Tunico06 (1511 in chips) 
+Seat 8: pinkysz (2661 in chips) 
+Seat 9: EdWinsStuff (1889 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+ritter7777: posts small blind 60
+BigFatBubble: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [6h 7d]
+Tunico06: folds 
+pinkysz: raises 180 to 300
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: raises 180 to 480
+ritter7777: folds 
+BigFatBubble: folds 
+pinkysz: calls 180
+*** FLOP *** [5s Th Ac]
+pinkysz: checks 
+VicLong80: bets 480
+pinkysz: raises 1686 to 2166 and is all-in
+VicLong80: calls 1630 and is all-in
+Uncalled bet (56) returned to pinkysz
+*** TURN *** [5s Th Ac] [Jd]
+*** RIVER *** [5s Th Ac Jd] [Tc]
+*** SHOW DOWN ***
+pinkysz: shows [As Qd] (two pair, Aces and Tens)
+VicLong80: shows [Ad Qc] (two pair, Aces and Tens)
+pinkysz collected 2733 from pot
+VicLong80 collected 2732 from pot
+*** SUMMARY ***
+Total pot 5465 | Rake 0 
+Board [5s Th Ac Jd Tc]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 (button) showed [Ad Qc] and won (2732) with two pair, Aces and Tens
+Seat 3: ritter7777 (small blind) folded before Flop
+Seat 4: BigFatBubble (big blind) folded before Flop
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz showed [As Qd] and won (2733) with two pair, Aces and Tens
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448801228: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:34:51 ET
+Table '4040939869 1' 9-max Seat #3 is the button
+Seat 1: zaroizinho (1069 in chips) is sitting out
+Seat 2: VicLong80 (2732 in chips) 
+Seat 3: ritter7777 (2318 in chips) 
+Seat 4: BigFatBubble (1222 in chips) 
+Seat 6: Tunico06 (1496 in chips) 
+Seat 8: pinkysz (2789 in chips) 
+Seat 9: EdWinsStuff (1874 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+BigFatBubble: posts small blind 60
+Tunico06: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [2h Qc]
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: calls 60
+Tunico06: raises 1361 to 1481 and is all-in
+BigFatBubble: folds 
+Uncalled bet (1361) returned to Tunico06
+Tunico06 collected 345 from pot
+Tunico06: doesn't show hand 
+*** SUMMARY ***
+Total pot 345 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 (button) folded before Flop (didn't bet)
+Seat 4: BigFatBubble (small blind) folded before Flop
+Seat 6: Tunico06 (big blind) collected (345)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448804374: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:35:07 ET
+Table '4040939869 1' 9-max Seat #4 is the button
+Seat 1: zaroizinho (1054 in chips) is sitting out
+Seat 2: VicLong80 (2717 in chips) 
+Seat 3: ritter7777 (2303 in chips) 
+Seat 4: BigFatBubble (1087 in chips) 
+Seat 6: Tunico06 (1706 in chips) 
+Seat 8: pinkysz (2774 in chips) 
+Seat 9: EdWinsStuff (1859 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+Tunico06: posts small blind 60
+pinkysz: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [Jc 6c]
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: raises 240 to 360
+ritter7777: folds 
+BigFatBubble: folds 
+Tunico06: folds 
+pinkysz: folds 
+Uncalled bet (240) returned to VicLong80
+VicLong80 collected 405 from pot
+*** SUMMARY ***
+Total pot 405 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 collected (405)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble (button) folded before Flop (didn't bet)
+Seat 6: Tunico06 (small blind) folded before Flop
+Seat 8: pinkysz (big blind) folded before Flop
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448808710: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:35:28 ET
+Table '4040939869 1' 9-max Seat #6 is the button
+Seat 1: zaroizinho (1039 in chips) is sitting out
+Seat 2: VicLong80 (2987 in chips) 
+Seat 3: ritter7777 (2288 in chips) 
+Seat 4: BigFatBubble (1072 in chips) 
+Seat 6: Tunico06 (1631 in chips) 
+Seat 8: pinkysz (2639 in chips) 
+Seat 9: EdWinsStuff (1844 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+pinkysz: posts small blind 60
+EdWinsStuff: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [Ad 6h]
+zaroizinho: folds 
+VicLong80: calls 120
+ritter7777: folds 
+BigFatBubble: folds 
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: raises 1709 to 1829 and is all-in
+VicLong80: folds 
+Uncalled bet (1709) returned to EdWinsStuff
+EdWinsStuff collected 405 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 405 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 6: Tunico06 (button) folded before Flop (didn't bet)
+Seat 8: pinkysz (small blind) folded before Flop
+Seat 9: EdWinsStuff (big blind) collected (405)
+
+
+
+PokerStars Hand #262448816728: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:36:08 ET
+Table '4040939869 1' 9-max Seat #8 is the button
+Seat 1: zaroizinho (1024 in chips) is sitting out
+Seat 2: VicLong80 (2852 in chips) 
+Seat 3: ritter7777 (2273 in chips) 
+Seat 4: BigFatBubble (1057 in chips) 
+Seat 6: Tunico06 (1616 in chips) 
+Seat 8: pinkysz (2564 in chips) 
+Seat 9: EdWinsStuff (2114 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+EdWinsStuff: posts small blind 60
+zaroizinho: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [5h 9s]
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: raises 120 to 240
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+Uncalled bet (120) returned to BigFatBubble
+BigFatBubble collected 405 from pot
+BigFatBubble: doesn't show hand 
+*** SUMMARY ***
+Total pot 405 | Rake 0 
+Seat 1: zaroizinho (big blind) folded before Flop
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble collected (405)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz (button) folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (small blind) folded before Flop
+
+
+
+PokerStars Hand #262448820147: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:36:24 ET
+Table '4040939869 1' 9-max Seat #9 is the button
+Seat 1: zaroizinho (889 in chips) is sitting out
+Seat 2: VicLong80 (2837 in chips) 
+Seat 3: ritter7777 (2258 in chips) 
+Seat 4: BigFatBubble (1327 in chips) 
+Seat 6: Tunico06 (1601 in chips) 
+Seat 8: pinkysz (2549 in chips) 
+Seat 9: EdWinsStuff (2039 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+zaroizinho: posts small blind 60
+VicLong80: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [5c 6s]
+ritter7777: folds 
+BigFatBubble: folds 
+Tunico06: raises 120 to 240
+pinkysz: folds 
+EdWinsStuff: raises 1784 to 2024 and is all-in
+zaroizinho: folds 
+VicLong80: folds 
+Tunico06: folds 
+Uncalled bet (1784) returned to EdWinsStuff
+EdWinsStuff collected 765 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 765 | Rake 0 
+Seat 1: zaroizinho (small blind) folded before Flop
+Seat 2: VicLong80 (big blind) folded before Flop
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (button) collected (765)
+
+
+
+PokerStars Hand #262448827516: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:37:01 ET
+Table '4040939869 1' 9-max Seat #1 is the button
+Seat 1: zaroizinho (814 in chips) is sitting out
+Seat 2: VicLong80 (2702 in chips) 
+Seat 3: ritter7777 (2243 in chips) 
+Seat 4: BigFatBubble (1312 in chips) 
+Seat 6: Tunico06 (1346 in chips) 
+Seat 8: pinkysz (2534 in chips) 
+Seat 9: EdWinsStuff (2549 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+VicLong80: posts small blind 60
+ritter7777: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [2h 6s]
+BigFatBubble: folds 
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: folds 
+Uncalled bet (60) returned to ritter7777
+ritter7777 collected 225 from pot
+*** SUMMARY ***
+Total pot 225 | Rake 0 
+Seat 1: zaroizinho (button) folded before Flop (didn't bet)
+Seat 2: VicLong80 (small blind) folded before Flop
+Seat 3: ritter7777 (big blind) collected (225)
+Seat 4: BigFatBubble folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448830265: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level V (60/120) - 2026/10/19 14:37:14 ET
+Table '4040939869 1' 9-max Seat #2 is the button
+Seat 1: zaroizinho (799 in chips) is sitting out
+Seat 2: VicLong80 (2627 in chips) 
+Seat 3: ritter7777 (2393 in chips) 
+Seat 4: BigFatBubble (1297 in chips) 
+Seat 6: Tunico06 (1331 in chips) 
+Seat 8: pinkysz (2519 in chips) 
+Seat 9: EdWinsStuff (2534 in chips) 
+zaroizinho: posts the ante 15
+VicLong80: posts the ante 15
+ritter7777: posts the ante 15
+BigFatBubble: posts the ante 15
+Tunico06: posts the ante 15
+pinkysz: posts the ante 15
+EdWinsStuff: posts the ante 15
+ritter7777: posts small blind 60
+BigFatBubble: posts big blind 120
+*** HOLE CARDS ***
+Dealt to zaroizinho [8h Jc]
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: raises 120 to 240
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+BigFatBubble: calls 120
+*** FLOP *** [9h 6c 2c]
+BigFatBubble: bets 120
+EdWinsStuff: raises 2159 to 2279 and is all-in
+BigFatBubble: calls 922 and is all-in
+Uncalled bet (1237) returned to EdWinsStuff
+*** TURN *** [9h 6c 2c] [Qh]
+*** RIVER *** [9h 6c 2c Qh] [7s]
+*** SHOW DOWN ***
+BigFatBubble: shows [Th As] (high card Ace)
+EdWinsStuff: shows [5c 5d] (a pair of Fives)
+EdWinsStuff collected 2729 from pot
+BigFatBubble finished the tournament in 7th place
+*** SUMMARY ***
+Total pot 2729 | Rake 0 
+Board [9h 6c 2c Qh 7s]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 (button) folded before Flop (didn't bet)
+Seat 3: ritter7777 (small blind) folded before Flop
+Seat 4: BigFatBubble (big blind) showed [Th As] and lost with high card Ace
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff showed [5c 5d] and won (2729) with a pair of Fives
+
+
+
+PokerStars Hand #262448841745: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:38:11 ET
+Table '4040939869 1' 9-max Seat #3 is the button
+Seat 1: zaroizinho (784 in chips) is sitting out
+Seat 2: VicLong80 (2612 in chips) 
+Seat 3: ritter7777 (2318 in chips) 
+Seat 6: Tunico06 (1316 in chips) 
+Seat 8: pinkysz (2504 in chips) 
+Seat 9: EdWinsStuff (3966 in chips) 
+zaroizinho: posts the ante 20
+VicLong80: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+Tunico06: posts small blind 80
+pinkysz: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [Ks 5h]
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: raises 160 to 320
+ritter7777: folds 
+Tunico06: raises 976 to 1296 and is all-in
+pinkysz: folds 
+VicLong80: calls 976
+*** FLOP *** [4d 8h 2d]
+*** TURN *** [4d 8h 2d] [9h]
+*** RIVER *** [4d 8h 2d 9h] [7d]
+*** SHOW DOWN ***
+Tunico06: shows [7h 7s] (three of a kind, Sevens)
+VicLong80: shows [Tc Ac] (high card Ace)
+Tunico06 collected 2872 from pot
+*** SUMMARY ***
+Total pot 2872 | Rake 0 
+Board [4d 8h 2d 9h 7d]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 showed [Tc Ac] and lost with high card Ace
+Seat 3: ritter7777 (button) folded before Flop (didn't bet)
+Seat 6: Tunico06 (small blind) showed [7h 7s] and won (2872) with three of a kind, Sevens
+Seat 8: pinkysz (big blind) folded before Flop
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448850487: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:38:53 ET
+Table '4040939869 1' 9-max Seat #6 is the button
+Seat 1: zaroizinho (764 in chips) is sitting out
+Seat 2: VicLong80 (1296 in chips) 
+Seat 3: ritter7777 (2298 in chips) 
+Seat 6: Tunico06 (2872 in chips) 
+Seat 8: pinkysz (2324 in chips) 
+Seat 9: EdWinsStuff (3946 in chips) 
+zaroizinho: posts the ante 20
+VicLong80: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+pinkysz: posts small blind 80
+EdWinsStuff: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [8h 5c]
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: folds 
+Tunico06: folds 
+pinkysz: raises 320 to 480
+EdWinsStuff: calls 320
+*** FLOP *** [As 7h 4c]
+pinkysz: bets 356
+EdWinsStuff: folds 
+Uncalled bet (356) returned to pinkysz
+pinkysz collected 1080 from pot
+pinkysz: doesn't show hand 
+*** SUMMARY ***
+Total pot 1080 | Rake 0 
+Board [As 7h 4c]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 6: Tunico06 (button) folded before Flop (didn't bet)
+Seat 8: pinkysz (small blind) collected (1080)
+Seat 9: EdWinsStuff (big blind) folded on the Flop
+
+
+
+PokerStars Hand #262448857322: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:39:27 ET
+Table '4040939869 1' 9-max Seat #8 is the button
+Seat 1: zaroizinho (744 in chips) is sitting out
+Seat 2: VicLong80 (1276 in chips) 
+Seat 3: ritter7777 (2278 in chips) 
+Seat 6: Tunico06 (2852 in chips) 
+Seat 8: pinkysz (2904 in chips) 
+Seat 9: EdWinsStuff (3446 in chips) 
+zaroizinho: posts the ante 20
+VicLong80: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+EdWinsStuff: posts small blind 80
+zaroizinho: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [5h Jd]
+VicLong80: folds 
+ritter7777: calls 160
+Tunico06: folds 
+pinkysz: raises 320 to 480
+EdWinsStuff: raises 960 to 1440
+zaroizinho: folds 
+ritter7777: folds 
+pinkysz: folds 
+Uncalled bet (960) returned to EdWinsStuff
+EdWinsStuff collected 1400 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 1400 | Rake 0 
+Seat 1: zaroizinho (big blind) folded before Flop
+Seat 2: VicLong80 folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz (button) folded before Flop
+Seat 9: EdWinsStuff (small blind) collected (1400)
+
+
+
+PokerStars Hand #262448863428: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:39:56 ET
+Table '4040939869 1' 9-max Seat #9 is the button
+Seat 1: zaroizinho (564 in chips) is sitting out
+Seat 2: VicLong80 (1256 in chips) 
+Seat 3: ritter7777 (2098 in chips) 
+Seat 6: Tunico06 (2832 in chips) 
+Seat 8: pinkysz (2404 in chips) 
+Seat 9: EdWinsStuff (4346 in chips) 
+zaroizinho: posts the ante 20
+VicLong80: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+zaroizinho: posts small blind 80
+VicLong80: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [4d 7d]
+ritter7777: raises 160 to 320
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: raises 1000 to 1320
+zaroizinho: folds 
+VicLong80: folds 
+ritter7777: raises 758 to 2078 and is all-in
+EdWinsStuff: calls 758
+*** FLOP *** [Jc 9d Kh]
+*** TURN *** [Jc 9d Kh] [6c]
+*** RIVER *** [Jc 9d Kh 6c] [Js]
+*** SHOW DOWN ***
+ritter7777: shows [Ad As] (two pair, Aces and Jacks)
+EdWinsStuff: shows [Ah 5h] (a pair of Jacks)
+ritter7777 collected 4516 from pot
+*** SUMMARY ***
+Total pot 4516 | Rake 0 
+Board [Jc 9d Kh 6c Js]
+Seat 1: zaroizinho (small blind) folded before Flop
+Seat 2: VicLong80 (big blind) folded before Flop
+Seat 3: ritter7777 showed [Ad As] and won (4516) with two pair, Aces and Jacks
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (button) showed [Ah 5h] and lost with a pair of Jacks
+
+
+
+PokerStars Hand #262448868814: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:40:22 ET
+Table '4040939869 1' 9-max Seat #1 is the button
+Seat 1: zaroizinho (464 in chips) is sitting out
+Seat 2: VicLong80 (1076 in chips) 
+Seat 3: ritter7777 (4516 in chips) 
+Seat 6: Tunico06 (2812 in chips) 
+Seat 8: pinkysz (2384 in chips) 
+Seat 9: EdWinsStuff (2248 in chips) 
+zaroizinho: posts the ante 20
+VicLong80: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+VicLong80: posts small blind 80
+ritter7777: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [2s 9c]
+Tunico06: folds 
+pinkysz: raises 160 to 320
+EdWinsStuff: folds 
+zaroizinho: folds 
+VicLong80: raises 736 to 1056 and is all-in
+ritter7777: folds 
+pinkysz: calls 736
+*** FLOP *** [3d Qs Qh]
+*** TURN *** [3d Qs Qh] [Kh]
+*** RIVER *** [3d Qs Qh Kh] [Ah]
+*** SHOW DOWN ***
+VicLong80: shows [8s 9s] (a pair of Queens)
+pinkysz: shows [4s 4h] (two pair, Queens and Fours)
+pinkysz collected 2392 from pot
+VicLong80 finished the tournament in 6th place
+*** SUMMARY ***
+Total pot 2392 | Rake 0 
+Board [3d Qs Qh Kh Ah]
+Seat 1: zaroizinho (button) folded before Flop (didn't bet)
+Seat 2: VicLong80 (small blind) showed [8s 9s] and lost with a pair of Queens
+Seat 3: ritter7777 (big blind) folded before Flop
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz showed [4s 4h] and won (2392) with two pair, Queens and Fours
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448873247: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:40:43 ET
+Table '4040939869 1' 9-max Seat #3 is the button
+Seat 1: zaroizinho (444 in chips) is sitting out
+Seat 3: ritter7777 (4336 in chips) 
+Seat 6: Tunico06 (2792 in chips) 
+Seat 8: pinkysz (3700 in chips) 
+Seat 9: EdWinsStuff (2228 in chips) 
+zaroizinho: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+Tunico06: posts small blind 80
+pinkysz: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [2d 5d]
+EdWinsStuff: folds 
+zaroizinho: folds 
+ritter7777: folds 
+Tunico06: folds 
+Uncalled bet (80) returned to pinkysz
+pinkysz collected 260 from pot
+pinkysz: doesn't show hand 
+*** SUMMARY ***
+Total pot 260 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 3: ritter7777 (button) folded before Flop (didn't bet)
+Seat 6: Tunico06 (small blind) folded before Flop
+Seat 8: pinkysz (big blind) collected (260)
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448878477: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:41:09 ET
+Table '4040939869 1' 9-max Seat #6 is the button
+Seat 1: zaroizinho (424 in chips) is sitting out
+Seat 3: ritter7777 (4316 in chips) 
+Seat 6: Tunico06 (2692 in chips) 
+Seat 8: pinkysz (3860 in chips) 
+Seat 9: EdWinsStuff (2208 in chips) 
+zaroizinho: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+pinkysz: posts small blind 80
+EdWinsStuff: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [2d 3s]
+zaroizinho: folds 
+ritter7777: folds 
+Tunico06: folds 
+pinkysz: raises 160 to 320
+EdWinsStuff: raises 1868 to 2188 and is all-in
+pinkysz: folds 
+Uncalled bet (1868) returned to EdWinsStuff
+EdWinsStuff collected 740 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 740 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 6: Tunico06 (button) folded before Flop (didn't bet)
+Seat 8: pinkysz (small blind) folded before Flop
+Seat 9: EdWinsStuff (big blind) collected (740)
+
+
+
+PokerStars Hand #262448885133: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:41:42 ET
+Table '4040939869 1' 9-max Seat #8 is the button
+Seat 1: zaroizinho (404 in chips) is sitting out
+Seat 3: ritter7777 (4296 in chips) 
+Seat 6: Tunico06 (2672 in chips) 
+Seat 8: pinkysz (3520 in chips) 
+Seat 9: EdWinsStuff (2608 in chips) 
+zaroizinho: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+EdWinsStuff: posts small blind 80
+zaroizinho: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [Td Qd]
+ritter7777: folds 
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: raises 160 to 320
+zaroizinho: folds 
+Uncalled bet (160) returned to EdWinsStuff
+EdWinsStuff collected 420 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 420 | Rake 0 
+Seat 1: zaroizinho (big blind) folded before Flop
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz (button) folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (small blind) collected (420)
+
+
+
+PokerStars Hand #262448888060: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:41:56 ET
+Table '4040939869 1' 9-max Seat #9 is the button
+Seat 1: zaroizinho (224 in chips) is sitting out
+Seat 3: ritter7777 (4276 in chips) 
+Seat 6: Tunico06 (2652 in chips) 
+Seat 8: pinkysz (3500 in chips) 
+Seat 9: EdWinsStuff (2848 in chips) 
+zaroizinho: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+zaroizinho: posts small blind 80
+ritter7777: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [9c 7d]
+Tunico06: folds 
+pinkysz: folds 
+EdWinsStuff: folds 
+zaroizinho: folds 
+Uncalled bet (80) returned to ritter7777
+ritter7777 collected 260 from pot
+*** SUMMARY ***
+Total pot 260 | Rake 0 
+Seat 1: zaroizinho (small blind) folded before Flop
+Seat 3: ritter7777 (big blind) collected (260)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (button) folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448889586: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:42:04 ET
+Table '4040939869 1' 9-max Seat #1 is the button
+Seat 1: zaroizinho (124 in chips) is sitting out
+Seat 3: ritter7777 (4436 in chips) 
+Seat 6: Tunico06 (2632 in chips) 
+Seat 8: pinkysz (3480 in chips) 
+Seat 9: EdWinsStuff (2828 in chips) 
+zaroizinho: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+ritter7777: posts small blind 80
+Tunico06: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [Jd 9c]
+pinkysz: folds 
+EdWinsStuff: raises 2648 to 2808 and is all-in
+zaroizinho: folds 
+ritter7777: folds 
+Tunico06: folds 
+Uncalled bet (2648) returned to EdWinsStuff
+EdWinsStuff collected 500 from pot
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 500 | Rake 0 
+Seat 1: zaroizinho (button) folded before Flop (didn't bet)
+Seat 3: ritter7777 (small blind) folded before Flop
+Seat 6: Tunico06 (big blind) folded before Flop
+Seat 8: pinkysz folded before Flop (didn't bet)
+Seat 9: EdWinsStuff collected (500)
+
+
+
+PokerStars Hand #262448893516: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:42:23 ET
+Table '4040939869 1' 9-max Seat #3 is the button
+Seat 1: zaroizinho (104 in chips) is sitting out
+Seat 3: ritter7777 (4336 in chips) 
+Seat 6: Tunico06 (2452 in chips) 
+Seat 8: pinkysz (3460 in chips) 
+Seat 9: EdWinsStuff (3148 in chips) 
+zaroizinho: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+Tunico06: posts small blind 80
+pinkysz: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [6c Qs]
+EdWinsStuff: folds 
+zaroizinho: folds 
+ritter7777: folds 
+Tunico06: raises 2272 to 2432 and is all-in
+pinkysz: folds 
+Uncalled bet (2272) returned to Tunico06
+Tunico06 collected 420 from pot
+Tunico06: doesn't show hand 
+*** SUMMARY ***
+Total pot 420 | Rake 0 
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 3: ritter7777 (button) folded before Flop (didn't bet)
+Seat 6: Tunico06 (small blind) collected (420)
+Seat 8: pinkysz (big blind) folded before Flop
+Seat 9: EdWinsStuff folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #262448898498: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VI (80/160) - 2026/10/19 14:42:47 ET
+Table '4040939869 1' 9-max Seat #6 is the button
+Seat 1: zaroizinho (84 in chips) is sitting out
+Seat 3: ritter7777 (4316 in chips) 
+Seat 6: Tunico06 (2692 in chips) 
+Seat 8: pinkysz (3280 in chips) 
+Seat 9: EdWinsStuff (3128 in chips) 
+zaroizinho: posts the ante 20
+ritter7777: posts the ante 20
+Tunico06: posts the ante 20
+pinkysz: posts the ante 20
+EdWinsStuff: posts the ante 20
+pinkysz: posts small blind 80
+EdWinsStuff: posts big blind 160
+*** HOLE CARDS ***
+Dealt to zaroizinho [Qh 4h]
+zaroizinho: folds 
+ritter7777: folds 
+Tunico06: raises 160 to 320
+pinkysz: folds 
+EdWinsStuff: calls 160
+*** FLOP *** [2d 9s 8s]
+EdWinsStuff: checks 
+Tunico06: checks 
+*** TURN *** [2d 9s 8s] [Ah]
+EdWinsStuff: checks 
+Tunico06: checks 
+*** RIVER *** [2d 9s 8s Ah] [5c]
+EdWinsStuff: checks 
+Tunico06: checks 
+*** SHOW DOWN ***
+EdWinsStuff: shows [Tc 8d] (a pair of Eights)
+Tunico06: shows [8c Jc] (a pair of Eights - Ace+Jack kicker)
+Tunico06 collected 820 from pot
+*** SUMMARY ***
+Total pot 820 | Rake 0 
+Board [2d 9s 8s Ah 5c]
+Seat 1: zaroizinho folded before Flop (didn't bet)
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 6: Tunico06 (button) showed [8c Jc] and won (820) with a pair of Eights
+Seat 8: pinkysz (small blind) folded before Flop
+Seat 9: EdWinsStuff (big blind) showed [Tc 8d] and lost with a pair of Eights
+
+
+
+PokerStars Hand #262448910884: Tournament #4040939869, $0.85+$0.15 USD Hold'em No Limit - Level VII (100/200) - 2026/10/19 14:43:48 ET
+Table '4040939869 1' 9-max Seat #8 is the button
+Seat 1: zaroizinho (64 in chips) is sitting out
+Seat 3: ritter7777 (4296 in chips) 
+Seat 6: Tunico06 (3172 in chips) 
+Seat 8: pinkysz (3180 in chips) 
+Seat 9: EdWinsStuff (2788 in chips) 
+zaroizinho: posts the ante 25
+ritter7777: posts the ante 25
+Tunico06: posts the ante 25
+pinkysz: posts the ante 25
+EdWinsStuff: posts the ante 25
+EdWinsStuff: posts small blind 100
+zaroizinho: posts big blind 39 and is all-in
+*** HOLE CARDS ***
+Dealt to zaroizinho [8d 4c]
+ritter7777: folds 
+Tunico06: folds 
+pinkysz is disconnected 
+pinkysz has timed out while disconnected
+pinkysz: folds 
+zaroizinho: folds 
+pinkysz is sitting out
+Uncalled bet (61) returned to EdWinsStuff
+EdWinsStuff collected 203 from pot
+zaroizinho finished the tournament in 5th place
+EdWinsStuff: doesn't show hand 
+*** SUMMARY ***
+Total pot 203 | Rake 0 
+Seat 1: zaroizinho (big blind) folded before Flop
+Seat 3: ritter7777 folded before Flop (didn't bet)
+Seat 6: Tunico06 folded before Flop (didn't bet)
+Seat 8: pinkysz (button) folded before Flop (didn't bet)
+Seat 9: EdWinsStuff (small blind) collected (203)
+
+
+
