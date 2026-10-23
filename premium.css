@@ -10,6 +10,7 @@
   --orbit-quiet:color-mix(in srgb,var(--text) 5%,var(--panel));
   --orbit-edge:color-mix(in srgb,var(--text) 15%,transparent);
 }
+
 body { font-variant-numeric:tabular-nums;line-height:1.5;-webkit-font-smoothing:antialiased; }
 button,input,select,textarea { letter-spacing:0; }
 button,select,textarea,input[type=search] { border-radius:var(--orbit-radius-sm); }
@@ -397,4 +398,46 @@ body.four-colors .preview-card-purple { color:var(--card-diamond); }
 @media(max-width:850px) {
   .sidebar-filters .quick-filters button { min-height:44px;font-size:12px; }
   .sidebar-label { font-size:11px; }
+}
+
+
+/* Phone replay: reserve the center for the pot and board. */
+@media (max-width:600px) and (orientation:portrait) {
+  .arena { height:520px;min-height:520px;max-width:440px;margin:8px auto 22px; }
+  .table-rail { inset:28px 18px 34px;padding:7px; }
+  .seat,.seat.hero { width:clamp(64px,20vw,82px); }
+  .seat .seat-box { padding:5px 3px;border-radius:8px; }
+  .seat .seat-identity { flex-direction:column;gap:0; }
+  .seat .seat-position { font-size:7px;line-height:10px; }
+  .seat .seat-name { font-size:10px;line-height:14px;max-width:100%; }
+  .seat .seat-stack,.seat.hero .seat-stack { font-size:12px;line-height:17px;margin-top:1px;letter-spacing:-.3px; }
+  .seat .seat-status { font-size:7px;line-height:10px;min-height:0;margin-top:1px; }
+  .seat .seat-status:empty { display:none; }
+  .seat .seat-action { display:none; }
+  .seat:not(.hero) .seat-cards:empty,.seat:not(.hero) .seat-cards:has(.back) { display:none; }
+  .seat:not(.hero) .seat-cards { height:27px; }
+  .seat:not(.hero) .seat-cards .card { width:20px;height:27px;font-size:13px; }
+  .seat:not(.hero) .seat-cards .suit { font-size:10px; }
+  .seat.hero .seat-cards { height:35px;margin-bottom:0; }
+  .seat.hero .seat-cards .card { width:25px;height:35px;font-size:17px; }
+  .seat.hero .seat-cards .suit { font-size:13px; }
+  .seat.folded:not(.current) .seat-box { opacity:.48; }
+  .seat.current .seat-box { outline:none; }
+  .arena .seat-bet.table-bet { left:var(--mobile-bet-x);top:var(--mobile-bet-y);font-size:8px;padding:2px 4px;white-space:nowrap;line-height:13px; }
+  .table-center { top:46%;width:54%;gap:0; }
+  .table-center .pot { font-size:19px;padding:5px 9px;line-height:1.2; }
+  .table-center .pot::before { font-size:7px; }
+  .table-center .board { gap:3px;margin:9px 0 5px;min-height:39px; }
+  .table-center .board .card { width:clamp(24px,7.5vw,32px);height:42px;font-size:18px; }
+  .table-center .board .suit { font-size:15px; }
+  .table-center .board .ghost { opacity:.16; }
+  .table-center .side-pots { font-size:8px;line-height:1.5;overflow-wrap:anywhere; }
+  .table-center .side-pots:empty { display:none; }
+  .table-center .street-label { font-size:9px;margin-top:5px; }
+  .felt-mark { display:none; }
+  body.has-history .replay-dock { display:contents; }
+  body.has-history .replay-dock .transport { position:fixed;inset:auto 0 calc(58px + env(safe-area-inset-bottom,0px));width:100%;max-width:none;min-height:64px;padding:8px 10px;background:var(--ui-surface);border-top:1px solid var(--orbit-edge);z-index:30; }
+  body.has-history { padding-bottom:calc(140px + env(safe-area-inset-bottom,0px)); }
+  .playback .decision-controls { display:flex;margin-top:8px; }
+  .replay-dock .transport button.play-button { min-width:100px; }
 }
