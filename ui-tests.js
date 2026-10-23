@@ -16,7 +16,7 @@ function boot(data=new Map(), blocked=false, width=390){
   for(const dialog of document.querySelectorAll('dialog')){dialog.showModal=()=>{dialog.open=true;};dialog.close=()=>{dialog.open=false;};}
   const localStorage={getItem:k=>{if(blocked)throw Error('blocked');return data.get(k)??null;},setItem:(k,v)=>{if(blocked)throw Error('quota');data.set(k,String(v));},removeItem:k=>{if(blocked)throw Error('blocked');data.delete(k);}};
   const context=vm.createContext({document,window,localStorage,navigator:{},innerWidth:width,Blob,URL,console,setTimeout:(fn,ms)=>{const id=++serial;timers.set(id,{fn,ms});return id;},clearTimeout:id=>timers.delete(id)});
-  for(const file of ['parser.js','replay-engine.js','study-tools.js','feature-tools.js','table-export.js','studio.js','app.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+file,'utf8'),context,{filename:file});
+  for(const file of ['parser.js','replay-engine.js','study-tools.js','viewer-tools.js','feature-tools.js','table-export.js','studio.js','settings.js','app.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+file,'utf8'),context,{filename:file});
   const $=id=>document.getElementById(id);
   return {document,window,data,timers,$,click:id=>{assert(!$(id).disabled,id+' is enabled');$(id).onclick();},import:()=>{$('paste').value=history;$('import-paste').onclick();},flushPosition:()=>{for(const [id,t]of [...timers])if(t.ms===150){timers.delete(id);t.fn();}},cursor:()=>Number($('timeline').value)};
 }

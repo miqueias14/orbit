@@ -38,7 +38,7 @@ function boot(data = new Map(), storage = {}) {
     setTimeout: (fn, ms) => {const id = ++serial; timers.set(id, {fn, ms}); return id;},
     clearTimeout: id => timers.delete(id),
   });
-  for (const file of ['parser.js', 'replay-engine.js', 'study-tools.js', 'feature-tools.js', 'table-export.js', 'studio.js', 'app.js']) {
+  for (const file of ['parser.js', 'replay-engine.js', 'study-tools.js','viewer-tools.js', 'feature-tools.js', 'table-export.js', 'studio.js','settings.js', 'app.js']) {
     vm.runInContext(fs.readFileSync(__dirname + '/' + file, 'utf8'), context, {filename: file});
   }
   const $ = id => document.getElementById(id);

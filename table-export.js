@@ -1,6 +1,7 @@
 (function (root) {
   'use strict';
 
+  const defaultPalette={table:'#203c3b',face:'#fffaf0',back:'#493663',ink:'#202136',red:'#c32e51',diamond:'#2365b9',club:'#177750'};
   const SUITS = {c: '♣', d: '♦', h: '♥', s: '♠'};
   const cleanText = (value, length) => String(value == null ? '' : value)
     .replace(/[\u0000-\u001f\u007f-\u009f\u202a-\u202e\u2066-\u2069]/g, ' ')
@@ -49,6 +50,7 @@
       eventNumber: options.eventNumber == null ? positive(state.index) : positive(options.eventNumber),
       bigBlind, smallBlind: positive(hand.smallBlind), ante: positive(hand.ante),
       bb: Boolean(options.bb), fourColors: Boolean(options.fourColors),
+      appearance:Object.fromEntries(Object.entries(defaultPalette).map(([key,fallback])=>[key,typeof options.appearance?.[key]==='string'&&/^#[0-9a-f]{6}$/i.test(options.appearance[key])?options.appearance[key]:fallback])),
       board: (Array.isArray(state.board) ? state.board : []).slice(0, 5).map(card),
       street: ({setup: 'INÍCIO', preflop: 'PRÉ-FLOP', flop: 'FLOP', turn: 'TURN', river: 'RIVER', showdown: 'SHOWDOWN', summary: 'RESUMO'})[state.street] || 'REPLAY',
       pot: positive(state.pot),
@@ -87,17 +89,17 @@
     }
     ctx.fillText(label, x, y);
   }
-  function drawCard(ctx, value, x, y, w, h, fourColors) {
+  function drawCard(ctx, value, x, y, w, h, fourColors, palette) {
     if (!value) {
-      rounded(ctx, x, y, w, h, 8, '#352355', '#786397', 1.5);
+      rounded(ctx, x, y, w, h, 8, palette.back, '#ffffff66', 1.5);
       rounded(ctx, x + 5, y + 5, w - 10, h - 10, 4, null, '#64507f', 1);
       const cx=x+w/2,cy=y+h/2,r=w*.17;
       ctx.beginPath();ctx.moveTo(cx,cy-r);ctx.lineTo(cx+r,cy);ctx.lineTo(cx,cy+r);ctx.lineTo(cx-r,cy);ctx.closePath();ctx.strokeStyle='#b6a0d2';ctx.lineWidth=1.5;ctx.stroke();
       return;
     }
     const rank = value[0] === 'T' ? '10' : value[0];
-    const colors = fourColors ? {c: '#177750', d: '#2365b9', h: '#c32e51', s: '#202136'} : {c: '#202136', d: '#c32e51', h: '#c32e51', s: '#202136'};
-    rounded(ctx, x, y, w, h, 8, '#faf8ff', '#ffffff', 1);
+    const colors = fourColors ? {c:palette.club,d:palette.diamond,h:palette.red,s:palette.ink} : {c:palette.ink,d:palette.red,h:palette.red,s:palette.ink};
+    rounded(ctx, x, y, w, h, 8, palette.face, '#ffffff', 1);
     text(ctx, rank, x + 9, y + 17, w * .38, colors[value[1]], 800, w - 12, 'left');
     text(ctx, SUITS[value[1]], x + w / 2, y + h * .68, w * .68, colors[value[1]], 600);
   }
@@ -113,11 +115,12 @@
 
   function render(canvas, scene) {
     if (!canvas || typeof canvas.getContext !== 'function') throw new Error('Seu navegador não oferece a exportação da mesa.');
+    const palette=scene.appearance||defaultPalette;
     const ctx = canvas.getContext('2d');
     if (!ctx) throw new Error('Não foi possível criar a imagem da mesa.');
     canvas.width = 1000; canvas.height = 1480;
     const background = ctx.createLinearGradient(0, 0, 1000, 1480);
-    background.addColorStop(0, '#181021'); background.addColorStop(1, '#09090f');
+    background.addColorStop(0, '#181b21'); background.addColorStop(1, '#101216');
     ctx.fillStyle = background; ctx.fillRect(0, 0, 1000, 1480);
     rounded(ctx, 46, 42, 7, 52, 3, '#a881ff');
     text(ctx, scene.title, 72, 62, 30, '#faf7ff', 800, 800, 'left');
@@ -126,21 +129,21 @@
     text(ctx, `${format(scene.smallBlind, scene.bigBlind, scene.bb)} / ${format(scene.bigBlind, scene.bigBlind, scene.bb)}${scene.ante ? ' · Ante ' + format(scene.ante, scene.bigBlind, scene.bb) : ''}`, 500, 154, 20, '#c9badc', 500, 900);
 
     ellipse(ctx, 500, 741, 399, 522, '#09070e', '#31253f', 6);
-    ellipse(ctx, 500, 736, 383, 504, '#261b36', '#51405f', 13);
+    ellipse(ctx, 500, 736, 383, 504, '#242831', '#434953', 13);
     const felt = ctx.createLinearGradient(150, 250, 850, 1230);
-    felt.addColorStop(0, '#35234d'); felt.addColorStop(1, '#20162f');
-    ellipse(ctx, 500, 736, 365, 487, felt, '#73518d', 2);
-    ellipse(ctx, 500, 736, 328, 445, null, '#5d416b', 1);
+    felt.addColorStop(0, palette.table); felt.addColorStop(1, palette.table);
+    ellipse(ctx, 500, 736, 365, 487, felt, '#4c6d64', 2);
+    ellipse(ctx, 500, 736, 328, 445, null, '#385c51', 1);
 
-    text(ctx, scene.street, 500, 520, 18, '#b5a1cc', 750);
-    text(ctx, 'POTE', 500, 558, 17, '#c6b1de', 750);
+    text(ctx, scene.street, 500, 520, 18, '#b2cbc3', 750);
+    text(ctx, 'POTE', 500, 558, 17, '#bfd3ca', 750);
     text(ctx, format(scene.pot, scene.bigBlind, scene.bb), 500, 605, 44, '#ffffff', 800, 430);
     const cardWidth = 72, cardGap = 12, start = 500 - (5 * cardWidth + 4 * cardGap) / 2;
     for (let i = 0; i < 5; i++) {
-      if (i < scene.board.length && scene.board[i]) drawCard(ctx, scene.board[i], start + i * (cardWidth + cardGap), 655, cardWidth, 103, scene.fourColors);
-      else rounded(ctx, start + i * (cardWidth + cardGap), 655, cardWidth, 103, 8, '#24192f', '#513b65', 1);
+      if (i < scene.board.length && scene.board[i]) drawCard(ctx, scene.board[i], start + i * (cardWidth + cardGap), 655, cardWidth, 103, scene.fourColors, palette);
+      else rounded(ctx, start + i * (cardWidth + cardGap), 655, cardWidth, 103, 8, '#1a3430', '#45665c', 1);
     }
-    rounded(ctx, 330, 804, 340, 104, 16, '#1b1327', '#523b6b', 1);
+    rounded(ctx, 330, 804, 340, 104, 16, '#191c23', '#434953', 1);
     ctx.font = '500 23px system-ui, -apple-system, "Segoe UI", Arial, sans-serif';
     wrap(ctx, scene.actionText, 500, 843, 300, 29, 2);
 
@@ -155,9 +158,9 @@
       if (player.folded) ctx.globalAlpha = .64;
       if (player.current) rounded(ctx, x - w / 2 - 5, y - 5, w + 10, h + 10, 19, '#64458a');
       const holeW = player.hero ? 49 : 39, holeH = player.hero ? 70 : 56;
-      drawCard(ctx, player.cards[0], x - holeW - 3, y - holeH - 11, holeW, holeH, scene.fourColors);
-      drawCard(ctx, player.cards[1], x + 3, y - holeH - 11, holeW, holeH, scene.fourColors);
-      rounded(ctx, x - w / 2, y, w, h, 15, player.hero ? '#392553' : '#17131f', player.hero ? '#bc97ff' : player.current ? '#b894ee' : '#55445f', player.hero ? 2.5 : 1.5);
+      drawCard(ctx, player.cards[0], x - holeW - 3, y - holeH - 11, holeW, holeH, scene.fourColors, palette);
+      drawCard(ctx, player.cards[1], x + 3, y - holeH - 11, holeW, holeH, scene.fourColors, palette);
+      rounded(ctx, x - w / 2, y, w, h, 15, player.hero ? '#252533' : '#1b2028', player.hero ? '#bc97ff' : player.current ? '#b894ee' : '#434a55', player.hero ? 2.5 : 1.5);
       text(ctx, player.name, x, y + 24, player.hero ? 20 : 19, '#f4effa', 750, w - 20);
       text(ctx, format(player.stack, scene.bigBlind, scene.bb), x, y + 57, player.hero ? 25 : 24, player.hero ? '#e1c9ff' : '#dcd2e6', 750, w - 18);
       const status = player.allIn ? 'ALL-IN' : player.folded ? 'FOLD' : player.disconnected ? 'DESCONECTADO' : player.sittingOut ? 'AUSENTE' : player.action;

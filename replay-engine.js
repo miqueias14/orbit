@@ -61,9 +61,13 @@
     return {snapshots, final, issues, net: hero ? hero.stack-hero.initial : null, flags: {vpip: actions.some(e => e.player === hand.hero), rfi, threebet, heroAllin: hand.events.some(e => e.player === hand.hero && e.allIn), anyAllin: hand.events.some(e => e.allIn), showdown: hand.events.some(e => e.street === 'showdown')}};
   }
   function decision(s, name) {
-    const p = s.players.find(p => p.name === name); if (!p || p.folded) return null;
+    const p = s.players.find(p => p.name === name); if (!p || p.folded || p.allIn || p.stack<=0) return null;
     const call = Math.min(p.stack, Math.max(0, ...s.players.map(p => p.bet))-p.bet);
-    return {call, odds: call > 0 ? call/(s.pot+call)*100 : null, limited: pots(s).length > 1};
+    // Compare eligibility AFTER the hypothetical call; an ordinary outstanding
+    // bet creates provisional layers too, but does not limit a covering caller.
+    const projected={...s,players:s.players.map(player=>player===p?{...player,total:player.total+call,bet:player.bet+call}:player)};
+    const limited=pots(projected).some(pot=>!pot.eligible.includes(name));
+    return {call, odds: call > 0 ? call/(s.pot+call)*100 : null, limited};
   }
   function position(hand) {
     const seats = hand.players.map(p=>p.seat).sort((a,b)=>a-b), hero = hand.players.find(p=>p.name===hand.hero);

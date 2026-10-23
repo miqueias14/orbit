@@ -8,6 +8,25 @@ Replayer local de históricos de torneio PokerStars em inglês. HTML, CSS e Java
 2. Clique em **Importar histórico** e selecione `reference-history.txt`, arraste o arquivo para a janela ou cole o histórico.
 3. Use **▶**, a timeline e os botões de street para estudar. O arquivo de referência é uma cópia integral do histórico real localizado na pasta de torneios, sem dados fixados no parser.
 
+### Configurações
+
+Abra **Configurações** (engrenagem no cabeçalho) mesmo antes de importar um histórico. O botão **Ajustes** do replay abre diretamente a aba Reprodução.
+
+- **Aparência:** temas escuro, claro e azul-noite; destaque com seletor de cor e quatro sugestões; exibição de explicações, posições nos assentos e redução de efeitos. O texto dos botões de destaque alterna entre claro e escuro conforme a luminosidade da cor escolhida.
+- **Mesa e cartas:** mesa verde, azul, roxa ou grafite; fundo das cartas marfim, branco ou escuro; verso roxo, azul, verde ou vermelho; baralho de duas ou quatro cores. A prévia muda imediatamente e as mesmas cores de mesa e baralho entram na imagem PNG exportada.
+- **Reprodução:** unidade fichas/BB, velocidade, tempo extra em momentos importantes, reprodução contínua, pausa antes do herói e ocultação de resultados futuros. Os controles da tela principal permanecem sincronizados.
+- As escolhas são aplicadas na hora e salvas neste navegador. Se o armazenamento estiver indisponível, a área informa que valem somente para a sessão atual. **Restaurar padrão** redefine apenas as preferências, preservando históricos, biblioteca, favoritos e notas.
+
+### Leitura da mão e novo visual
+
+- Mesa verde sobre superfícies neutras, com menos textos decorativos e um bloco dedicado à ação atual. A mesa continua oval no celular. Valores, ação e controles têm áreas distintas; os detalhes de reprodução ficam em **Ajustes**.
+- Cada assento mostra a posição inicial na mão (BTN, SB, BB, CO etc.). Nomes longos continuam abreviados no assento; o nome completo aparece no texto da ação e no contexto do jogador a agir.
+- A contagem acima da mesa informa quantos jogadores continuam na disputa e quantos estão all-in.
+- A explicação de uma aposta usa o pote imediatamente anterior à ação, inclusive em all-ins. Um aumento informa o valor anterior da aposta, o novo total e quanto o jogador acrescentou. Não há classificação de qualidade da jogada.
+- **Stack**, **Para pagar** e **Pot odds** pertencem ao jogador identificado em **Vez de…** e seguem a unidade escolhida em **Fichas ⇄ BB**. Entre decisões e ao concluir a mão, os valores ficam vazios. As pot odds usam o pote após o call; quando o jogador não é elegível a todas as contribuições, o percentual é ocultado.
+- No showdown, as combinações das cartas conhecidas aparecem abaixo da ação (par, dois pares, sequência etc.). O cálculo escolhe as cinco melhores cartas entre as disponíveis. Cartas presentes apenas no resumo só entram após o fim da mão e com a consulta explícita habilitada; voltar antes do showdown oculta os nomes das combinações.
+- Em **Ajustes → Tempo extra em cartas novas e all-ins**, escolha de zero a três segundos adicionais após flop, turn, river, showdown e ações all-in. A preferência é salva no navegador e respeita a pausa antes da decisão do herói.
+
 ### Biblioteca e ferramentas de estudo
 
 - **Biblioteca:** importe vários `.txt` de uma vez, por seletor ou arrastando os arquivos. O sistema agrupa as mãos por torneio e ignora IDs duplicados. Abra um torneio salvo, retome sua posição, exporte seu texto ou remova-o da biblioteca. Os arquivos originais no computador não são alterados. Importar novos trechos do mesmo torneio acrescenta as mãos que faltam.
@@ -56,11 +75,15 @@ Preferências, favoritos e notas usam `localStorage`. Se o navegador bloquear es
 - `parser.js`: leitura e eventos com linhas de origem, duplicatas e avisos.
 - `replay-engine.js`: reducer sem DOM, snapshots, potes, conferências e filtros.
 - `app.js`: importação local, interface, reprodução, persistência e exportações.
+- `settings.js`, `settings.css`: preferências locais, temas e diálogo de configurações.
+- `settings-tests.js`: persistência e restauração de preferências, sincronização com o replay, paletas de exportação, armazenamento indisponível e preservação dos dados ao restaurar o padrão.
+- `viewer-tools.js`: explicações factuais de apostas, posições, contagem de jogadores e avaliação das melhores cinco cartas no showdown.
+- `viewer-tests.js`: elegibilidade ao pote, contexto do jogador correto, cartas ocultas, combinações e kickers, posições e tempo extra de reprodução.
 - `study-tools.js`: decisões, resumo, validação das notas e restauração da posição.
 - `feature-tools.js`: busca avançada, etiquetas, biblioteca, gráfico e fila de revisão.
 - `studio.js`: controles das ferramentas de estudo e persistência da biblioteca.
 - `table-export.js`: desenho da mesa e exportação PNG pelo navegador.
-- `styles.css`, `studio.css` e `index.html`: interface responsiva em português, mesa oval e componentes de estudo.
+- `styles.css`, `studio.css`, `viewer.css`, `settings.css` e `index.html`: interface responsiva em português, mesa oval e componentes de estudo.
 - `reference-history.txt`: histórico real de referência com 47 mãos.
 - `tests.js`: testes executáveis com Node, sem bibliotecas adicionais.
 - `ui-tests.js`: testes de integração em DOM simulado; exige instalar as dependências de desenvolvimento com `pnpm install` e executar `node ui-tests.js`.
@@ -97,6 +120,6 @@ As ferramentas novas foram testadas com importação múltipla (incluindo BOM em
 - A página de referência GPRO Replay não pôde ser acessada pela ferramenta; a interface foi construída a partir da direção visual e dos requisitos fornecidos.
 - Compatibilidade principal: torneios PokerStars No Limit Hold’em com histórico em inglês e um único board. Outros jogos, idiomas, cash games, Zoom e múltiplos boards não são suportados. Linhas desconhecidas permanecem na sequência e geram avisos.
 - Potes calculados durante as apostas são provisórios, antes de devoluções e ações seguintes. O fim da mão usa o detalhamento do resumo para conferência; pagamentos sempre vêm dos eventos `collected`. Histórico incompleto não recebe pagamentos inventados.
-- Pot odds mostram a razão nominal com o call efetivo limitado ao stack. Com potes paralelos, a interface informa a limitação de elegibilidade; não calcula equity, ICM, ROI ou GTO.
+- Pot odds usam o call efetivo limitado ao stack e só mostram o percentual quando o jogador pode disputar todas as contribuições após o call. Caso contrário, a interface informa a limitação de elegibilidade e oculta o percentual; não calcula equity, ICM, ROI ou GTO.
 - Em arquivos inconsistentes, o diagnóstico informa divergências; o motor preserva os valores registrados sem corrigir o histórico silenciosamente. O arquivo real de referência passou sem valores negativos.
 - O fim do arquivo é apresentado como **fim do histórico importado**. Não há inferência sobre o restante do torneio.

@@ -6,9 +6,9 @@
   const sessionHistoryKey = 'orbit-session-history-v1', sessionPositionKey = 'orbit-session-position-v1';
   let sessionStored = false, sessionTimer, editingDecision = null, activeSessionId = null;
   let pausedDecision = null, bypassDecision = null;
-  let studio = null;
+  let studio = null, settings = null;
   let saved = {annotations: {}, prefs: {}}, storage = true, hands = [], compiled = [], warnings = [], current = 0, cursor = 0, timer = null, playing = false, selected = new Set(), filtered = [], toastTimer;
-  try {const raw = localStorage.getItem(key); if (raw) {const parsed = JSON.parse(raw); for(const [k,v] of Object.entries(parsed.annotations || {}))if(/^\d+:\d+$/.test(k))saved.annotations[k]=StudyTools.cleanAnnotation(v); saved.prefs = parsed.prefs || {}; delete saved.prefs['training-toggle'];} localStorage.setItem(key, JSON.stringify(saved));} catch {storage = false;}
+  try {const raw = localStorage.getItem(key); if (raw) {const parsed = JSON.parse(raw); for(const [k,v] of Object.entries(parsed.annotations || {}))if(/^\d+:\d+$/.test(k))saved.annotations[k]=StudyTools.cleanAnnotation(v); saved.prefs = parsed.prefs && typeof parsed.prefs==='object' && !Array.isArray(parsed.prefs) ? parsed.prefs : {}; delete saved.prefs['training-toggle'];} localStorage.setItem(key, JSON.stringify(saved));} catch {storage = false;}
   function persist() {try {if (storage) localStorage.setItem(key, JSON.stringify(saved));} catch {storage = false;} if (!storage) $('storage-status').textContent = 'Armazenamento indisponível · alterações só nesta sessão';}
   persist();
   const hand = () => hands[current], replay = () => compiled[current], state = () => replay()?.snapshots[cursor];
@@ -36,7 +36,7 @@
     }
   }
   function updateAnnotation(change) {if (!hand()) return; const k = annotationKey(hand()); saved.annotations[k] = {...annotation(hand()), ...change}; persist();}
-  let bb = !!saved.prefs.bb;
+  let bb = saved.prefs.bb===true;
   const fmt = value => (value / (bb && hand() ? hand().bigBlind : 1)).toLocaleString('pt-BR', {maximumFractionDigits: bb ? 2 : 2}) + (bb ? ' BB' : '');
   const spoilersActive = () => $('spoilers').checked;
   const hiddenFuture = index => spoilersActive() && !(index === current && cursor === compiled[index].snapshots.length-1);
@@ -83,7 +83,7 @@
     if ($('hero-pause').checked && StudyTools.isHeroDecision(hand(),cursor) && bypassDecision!==decisionKey) {pausedDecision=decisionKey;stop();toast('Sua decisão. Toque em Continuar para revelar e seguir.');return;}
     pausedDecision=null;bypassDecision=null;cursor = skipAntes(cursor + 1); render(); schedule();
   }
-  function schedule() {clearTimeout(timer); if (!playing) return; $('play').textContent = 'Ⅱ Pausar'; $('play').setAttribute('aria-label','Pausar'); timer = setTimeout(tick, 1000 / +$('speed').value);}
+  function schedule() {clearTimeout(timer); if (!playing) return; $('play').textContent = 'Ⅱ Pausar'; $('play').setAttribute('aria-label','Pausar'); const extra=ViewerTools.important(state()?.current)?Number($('moment-pause').value):0; timer = setTimeout(tick, 1000 / +$('speed').value + extra);}
   function play() {
     if(!hand())return;
     if(playing){stop();return;}
@@ -102,9 +102,9 @@
     const p = e.player ? e.player + ' · ' : '';
     if (e.type === 'street') return ({preflop:'Pré-flop',flop:'Flop',turn:'Turn',river:'River',showdown:'Showdown'})[e.street];
     if (e.type === 'post') return p + (e.kind === 'ante' ? 'ante ' : e.kind === 'sb' ? 'small blind ' : 'big blind ') + fmt(e.amount) + (e.allIn?' · all-in':'');
-    if (e.type === 'raise') return p + 'raise para ' + fmt(e.to) + (e.allIn?' · all-in':'');
-    if (e.type === 'call' || e.type === 'bet') return p + (e.type === 'call'?'call ':'bet ') + fmt(e.amount) + (e.allIn?' · all-in':'');
-    if (e.type === 'fold') return p + 'fold'; if (e.type === 'check') return p + 'check';
+    if (e.type === 'raise') return p + 'aumentou para ' + fmt(e.to) + (e.allIn?' · all-in':'');
+    if (e.type === 'call' || e.type === 'bet') return p + (e.type === 'call'?'pagou ':'apostou ') + fmt(e.amount) + (e.allIn?' · all-in':'');
+    if (e.type === 'fold') return p + 'desistiu'; if (e.type === 'check') return p + 'passou';
     if (e.type === 'return') return p + 'recebe de volta ' + fmt(e.amount);
     if (e.type === 'collect') return p + 'recebe ' + fmt(e.amount) + ' · ' + e.pot;
     if (e.type === 'deal') return p + 'recebe suas cartas';
@@ -139,7 +139,7 @@
     $('clear-session').hidden=!loaded;
     for (const id of ['play','start','end','prev','next','favorite','copy','units','notes','study-reveal','timeline','next-decision','mark-decision']) $(id).disabled = !loaded;
     $('prev-hand').disabled = !loaded || adjacentHand(-1)===undefined; $('next-hand').disabled = !loaded || adjacentHand(1)===undefined;
-    if (!loaded) {document.querySelectorAll('[data-street]').forEach(n=>n.disabled=true); $('hand-summary').hidden=true;studio?.render(); return;}
+    if (!loaded) {document.querySelectorAll('[data-street]').forEach(n=>n.disabled=true); $('hand-summary').hidden=true;$('showdown-results').hidden=true;studio?.render();settings?.sync(); return;}
     $('start').disabled = $('prev').disabled = cursor<=skipAntes(0); $('end').disabled = $('next').disabled = cursor===r.snapshots.length-1;
     if(!queue.length)for(const id of ['play','start','end','prev','next','timeline'])$(id).disabled=true;
     $('units').textContent = bb ? 'BB ⇄ Fichas' : 'Fichas ⇄ BB';
@@ -158,6 +158,8 @@
     }
     $('pot').textContent = fmt(s.pot) + (s.paid ? ` · pago ${fmt(s.paid)}`:'');
     const layers = ReplayEngine.pots(s), done = cursor===r.snapshots.length-1;
+    const participants=ViewerTools.participants(s);
+    $('players-in-hand').textContent=done?(h.complete?'Mão encerrada':'Fim dos eventos disponíveis'):participants.active+(participants.active===1?' jogador na disputa':' jogadores na disputa')+(participants.allIn?' · '+participants.allIn+' all-in':'');
     const heroDecision = queue.includes(current)&&StudyTools.isHeroDecision(h,cursor);
     const nextDecision = StudyTools.nextDecision(hands,current,cursor,queue);
     $('next-decision').disabled=!nextDecision;
@@ -179,7 +181,9 @@
       let view = seatNodes.get(p.name);
       if (!view) {
         const seat=el('div','seat'), hole=el('div','seat-cards'), box=el('div','seat-box'), stack=el('div','seat-stack'), status=el('div','seat-status'), action=el('div','seat-action'), bet=el('span','seat-bet'), blind=el('span','blind');
-        box.append(el('div','seat-name',p.name),stack,status,blind);
+        const identity=el('div','seat-identity'),position=el('span','seat-position',ViewerTools.position(h,p.name)),name=el('div','seat-name',p.name);
+        name.title=p.name;position.title='Posição inicial na mão: '+position.textContent;identity.append(position,name);
+        box.append(identity,stack,status,blind);
         if(p.seat===h.button) box.append(el('span','dealer','D'));
         seat.append(hole,box,action); $('seats').append(seat,bet);
         bet.dataset.seatIndex=i;
@@ -201,6 +205,9 @@
       view.bet.classList.toggle('latest-bet',s.current?.player===p.name&&['post','bet','raise','call'].includes(s.current?.type));
     });
     $('action-text').textContent = s.current ? describe(s.current) : 'Início da mão · stacks antes dos antes e blinds';
+    $('action-detail').textContent=ViewerTools.actionDetail(r.snapshots[Math.max(0,cursor-1)],s.current,fmt);
+    $('action-detail').hidden=!$('action-detail').textContent;
+    renderShowdown(s,done);
     $('timeline').min = skipAntes(0); $('timeline').max = r.snapshots.length-1; $('timeline').value = cursor; $('event-count').textContent = `${cursor} / ${r.snapshots.length-1}`;
     document.querySelectorAll('[data-street]').forEach(n => {n.disabled = !queue.length||!h.events.some(e=>e.type==='street' && e.street===n.dataset.street); n.classList.toggle('active',s.street===n.dataset.street);});
     const list = $('action-list');
@@ -211,17 +218,32 @@
     for(let i=0;i<list.children.length;i++)list.children[i].hidden=i>=count;
     if(cursor)list.children[cursor-1]?.classList.add('active');
     if(playing)list.scrollTop=list.scrollHeight;
-    const next = h.events[cursor], actor = next && ['fold','call','check','bet','raise'].includes(next.type) ? next.player : h.hero;
-    const d = ReplayEngine.decision(s,actor), hero = s.players.find(p=>p.name===h.hero);
-    $('hero-stack').textContent = hero ? (hero.stack/h.bigBlind).toLocaleString('pt-BR',{maximumFractionDigits:2})+' BB' : '—';
-    $('call-label').textContent = actor === h.hero ? 'PARA PAGAR · HERÓI' : 'PARA PAGAR · '+actor;
-    $('to-call').textContent = d ? fmt(d.call) : '—'; $('pot-odds').textContent = d?.odds ? d.odds.toLocaleString('pt-BR',{maximumFractionDigits:1})+'%' : '—';
-    $('odds-note').textContent = d?.limited ? 'Razão nominal; potes paralelos podem limitar a elegibilidade.' : 'Pote antes do call. Sem cálculo de equity.';
+    const actor=nextActor, actorState=s.players.find(p=>p.name===actor),hero=s.players.find(p=>p.name===h.hero);
+    const d=actorState&&!actorState.folded&&!actorState.allIn&&!done?ReplayEngine.decision(s,actor):null;
+    $('decision-player').textContent=d?'Vez de '+(actor===h.hero?'você · ':'')+actor:done?'Mão encerrada':'Aguardando a próxima ação';
+    $('stack-label').textContent='STACK · '+(bb?'BB':'FICHAS');
+    $('hero-stack').textContent=d?fmt(actorState.stack):'—';
+    $('call-label').textContent='PARA PAGAR';
+    $('to-call').textContent=d?fmt(d.call):'—';
+    $('pot-odds').textContent=d?.odds&&!d.limited?d.odds.toLocaleString('pt-BR',{maximumFractionDigits:1})+'%':'—';
+    $('odds-note').textContent=!d?'Os valores aparecem quando há um jogador a agir.':d.limited?'Pot odds indisponíveis: existem contribuições diferentes e a elegibilidade aos potes precisa ser considerada.':d.call>0?'Pot odds: pagamento ÷ pote após o call. Não é a chance de vencer.':'Sem aposta a pagar neste momento.';
     $('end-message').textContent = done ? (current === hands.length-1 ? 'Fim do histórico importado.' : h.complete?'Fim da mão.':'Fim dos eventos disponíveis · mão incompleta.') + (hero?.elimination ? ' '+hero.elimination.replace('finished the tournament in 5th place','terminou o torneio em 5º lugar') : '') : '';
-    renderSummary(done); renderBookmarks();studio?.render();
+    renderSummary(done); renderBookmarks();studio?.render();settings?.sync();
     const nextListSignature=current+':'+done+':'+spoilersActive()+':'+$('filter').value+':'+$('search').value;
     if(listSignature!==nextListSignature){listSignature=nextListSignature;renderList();}
     clearTimeout(sessionTimer); sessionTimer=setTimeout(savePosition,150);
+  }
+  function renderShowdown(s,done){
+    const host=$('showdown-results');host.replaceChildren();
+    if(s.street!=='showdown'&&!done){host.hidden=true;return;}
+    for(const p of s.players){
+      if(p.folded)continue;
+      const cards=p.cards.length===2?p.cards:done&&$('study-reveal').checked?hand().summaryCards[p.name]:null;
+      if(!cards||cards.length!==2)continue;
+      const made=ViewerTools.madeHand([...cards,...s.board]);if(!made)continue;
+      const row=el('div','showdown-row');row.append(el('span','',p.name),el('strong','',made.label));host.append(row);
+    }
+    host.hidden=!host.childElementCount;
   }
   function renderSummary(done) {
     $('hand-summary').hidden=!done;
@@ -282,7 +304,6 @@
   function setTab(tab) {if(tab!=='table')stop();document.querySelector('.workspace').dataset.tab=tab; document.querySelectorAll('[data-tab]').forEach(n=>{if(n.tagName==='BUTTON'){n.classList.toggle('active',n.dataset.tab===tab);n.setAttribute('aria-pressed',String(n.dataset.tab===tab));}});}
   $('import-open').onclick=()=>{stop(); $('import-dialog').showModal();};
   $('welcome-import').onclick=$('import-open').onclick;
-  $('options-toggle').onclick=()=>{const options=$('playback-settings');options.hidden=!options.hidden;$('options-toggle').setAttribute('aria-expanded',String(!options.hidden));};
   $('next-decision').onclick=()=>{
     const queue=matchingHands();
     if(queue.includes(current)&&StudyTools.isHeroDecision(hand(),cursor)){seek(cursor+1);return;}
@@ -329,6 +350,8 @@
   $('backup-export').onclick=()=>download('orbit-anotacoes.json',JSON.stringify({version:1,annotations:saved.annotations,prefs:saved.prefs},null,2),'application/json');
   $('backup-import').onclick=()=>$('backup-file').click(); $('backup-file').onchange=async e=>{try {const data=JSON.parse(await e.target.files[0].text());if(data.version!==1||!data.annotations||typeof data.annotations!=='object'||Array.isArray(data.annotations))throw Error('Formato inválido');for(const [k,v] of Object.entries(data.annotations)){if (/^\d+:\d+$/.test(k)&&v&&typeof v==='object')saved.annotations[k]=StudyTools.cleanAnnotation(v);}persist();if(hand())$('notes').value=annotation(hand()).note||'';render();renderList();toast('Anotações importadas.');}catch(error){toast('Backup não importado: '+error.message);}e.target.value='';};
   for(const id of ['continuous','hero-pause','spoilers']) {if(saved.prefs[id]!==undefined)$(id).checked=!!saved.prefs[id];$(id).onchange=()=>{saved.prefs[id]=$(id).checked;persist();render();renderList();};}
+  if(['0','1000','2000','3000'].includes(saved.prefs['moment-pause']))$('moment-pause').value=saved.prefs['moment-pause'];
+  $('moment-pause').onchange=()=>{saved.prefs['moment-pause']=$('moment-pause').value;persist();if(playing)schedule();};
   if(['0.5','1','2','4'].includes(saved.prefs.speed))$('speed').value=saved.prefs.speed;
   $('study-reveal').onchange=()=>{if(cursor!==replay().snapshots.length-1){$('study-reveal').checked=false;toast('Cartas do resumo ficam disponíveis somente após a mão.');}render();};
   $('history-toggle').onclick=()=>{const workspace=document.querySelector('.workspace'); workspace.classList.toggle('history-hidden');$('history-toggle').setAttribute('aria-expanded',String(!workspace.classList.contains('history-hidden')));if(innerWidth<=850)setTab('history');};
@@ -347,6 +370,8 @@
     preference:(key,value)=>{saved.prefs[key]=value;persist();},
     setAnnotation:(key,value)=>{saved.annotations[key]=StudyTools.cleanAnnotation(value);persist();},
   });
+  settings=OrbitSettings.create({view:()=>({prefs:saved.prefs}),stop,stored:()=>storage,
+    preferences:patch=>{Object.assign(saved.prefs,patch);persist();},units:value=>{bb=value;},changed:filterChanged,toast});
   render(); renderList();
   try {
     const stored=localStorage.getItem(sessionHistoryKey);
