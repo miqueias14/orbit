@@ -186,6 +186,8 @@
         if(p.seat===h.button) box.append(el('span','dealer','D'));
         seat.append(hole,box,action); $('seats').append(seat,bet);
         bet.dataset.seatIndex=i;
+        bet.style.setProperty('--mobile-bet-x',x+'%');
+        bet.style.setProperty('--mobile-bet-y',(i===0?y-13:y+7)+'%');
         bet.style.setProperty('--bet-x',(50-Math.sin(a)*27)+'%');bet.style.setProperty('--bet-y',(50+Math.cos(a)*20)+'%');
         seat.style.setProperty('--x',x+'%'); seat.style.setProperty('--y',y+'%'); seat.style.setProperty('--bet-top',y>65?'-24px':y<35?'calc(100% + 6px)':'50%'); seat.style.setProperty('--bet-left',y>65||y<35?'50%':x<50?'calc(100% + 22px)':'-22px');
         view={seat,hole,stack,status,action,bet,blind,cards:null}; seatNodes.set(p.name,view);
@@ -381,3 +383,4 @@
     }
   }catch{ /* Session restore is optional when storage is blocked. */ }
 })();
+
