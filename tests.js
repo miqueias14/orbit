@@ -82,4 +82,15 @@ assert.equal(Study.nextDecision(imported.hands,46,imported.hands[46].events.leng
 assert.deepEqual(Study.restoredPosition(imported.hands,{tournament:first.tournament,hand:first.id,cursor:20}),{hand:0,cursor:20});
 assert.equal(Study.restoredPosition(imported.hands,{tournament:'other',hand:first.id,cursor:20}),null);
 assert.deepEqual(Study.cleanAnnotation({favorite:true,note:'x',training:{2:{choice:'call'}},eventNotes:{'2':{note:'Review'},'-1':{note:'bad'},'__proto__':{note:'bad'}}}),{favorite:true,note:'x',eventNotes:{'2':{note:'Review',reviewed:false}},tags:[],reviewed:false});
+// Separate the hero's decisions from opponents' all-ins and forced posts.
+const allinHand=events=>({hero:'Hero',players:[{name:'Hero',seat:1,initial:100},{name:'Rival',seat:2,initial:100}],events,complete:false,summaryWins:{}});
+const opponentOnly=Engine.compile(allinHand([{type:'fold',street:'preflop',player:'Hero'},{type:'raise',street:'preflop',player:'Rival',to:100,allIn:true}]));
+assert.equal(opponentOnly.flags.heroAllin,false);assert.equal(opponentOnly.flags.anyAllin,true);assert.equal(opponentOnly.flags.heroForcedAllin,false);
+const forced=Engine.compile(allinHand([{type:'post',kind:'bb',street:'setup',player:'Hero',amount:100,allIn:true},{type:'fold',street:'preflop',player:'Hero'}]));
+assert.equal(forced.flags.heroAllin,false);assert.equal(forced.flags.heroForcedAllin,true);assert.equal(forced.final.players[0].folded,true);assert.equal(forced.final.players[0].allIn,false);assert.equal(forced.final.players[0].stack,0);
+const voluntary=Engine.compile(allinHand([{type:'raise',street:'preflop',player:'Hero',to:100,allIn:true},{type:'call',street:'preflop',player:'Rival',amount:100},{type:'collect',player:'Hero',amount:200}]));
+assert.equal(voluntary.flags.heroAllin,true);assert.equal(voluntary.flags.heroForcedAllin,false);assert.equal(voluntary.final.players[0].allIn,false);assert.equal(voluntary.final.players[0].stack,200);
+const implicit=Engine.compile(allinHand([{type:'call',street:'preflop',player:'Hero',amount:100}]));assert.equal(implicit.flags.heroAllin,true,'exhausting the stack counts even without an explicit all-in marker');
+assert.equal(Engine.compile(allinHand([{type:'fold',street:'preflop',player:'Hero',allIn:true}])).flags.anyAllin,false,'a fold cannot be an all-in action');
+const finalReal=Engine.compile(imported.hands[46]);assert.equal(finalReal.flags.heroAllin,false);assert.equal(finalReal.flags.heroForcedAllin,true);assert.equal(finalReal.flags.anyAllin,true);assert(finalReal.final.players.find(p=>p.name==='zaroizinho').folded);assert(!finalReal.final.players.find(p=>p.name==='zaroizinho').allIn);
 console.log(`PASS: 47 real hands, ${eventCount} states, chip conservation, deterministic rebuild, 4 acceptance hands, side pots, duplicates, BOM/CRLF, incomplete hands and line diagnostics.`);

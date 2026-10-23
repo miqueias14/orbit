@@ -137,12 +137,11 @@
     const h = hand(), r = replay(), s = state(), loaded = !!h, queue=matchingHands();
     document.body.classList.toggle('has-history', loaded);
     $('clear-session').hidden=!loaded;
-    for (const id of ['play','start','end','prev','next','favorite','copy','units','notes','study-reveal','timeline','next-decision','mark-decision']) $(id).disabled = !loaded;
+    for (const id of ['play','start','end','prev','next','favorite','copy','notes','study-reveal','timeline','next-decision','mark-decision']) $(id).disabled = !loaded;
     $('prev-hand').disabled = !loaded || adjacentHand(-1)===undefined; $('next-hand').disabled = !loaded || adjacentHand(1)===undefined;
     if (!loaded) {document.querySelectorAll('[data-street]').forEach(n=>n.disabled=true); $('hand-summary').hidden=true;$('showdown-results').hidden=true;studio?.render();settings?.sync(); return;}
     $('start').disabled = $('prev').disabled = cursor<=skipAntes(0); $('end').disabled = $('next').disabled = cursor===r.snapshots.length-1;
     if(!queue.length)for(const id of ['play','start','end','prev','next','timeline'])$(id).disabled=true;
-    $('units').textContent = bb ? 'BB ⇄ Fichas' : 'Fichas ⇄ BB';
     $('tournament-title').textContent = `Torneio #${h.tournament}`;
     $('session-meta').textContent = `${h.buyin} · ${h.maxSeats || h.players.length}-max\nBlinds ${h.smallBlind}/${h.bigBlind} · Ante ${h.ante}`;
     $('hand-count').textContent = hands.length;
@@ -341,7 +340,6 @@
   $('prev-hand').onclick=()=>changeHand(-1); $('next-hand').onclick=()=>changeHand(1); $('start').onclick=()=>seek(0); $('end').onclick=()=>seek(replay().snapshots.length-1); $('prev').onclick=()=>seek(cursor-1); $('next').onclick=()=>seek(cursor+1); $('play').onclick=play; $('timeline').oninput=e=>seek(+e.target.value);
   document.querySelectorAll('[data-street]').forEach(n=>n.onclick=()=>seek(hand().events.findIndex(e=>e.type==='street'&&e.street===n.dataset.street)+1));
   $('speed').onchange=()=>{saved.prefs.speed=$('speed').value; persist(); if(playing) schedule();};
-  $('units').onclick=()=>{bb=!bb;saved.prefs.bb=bb;persist();render();};
   $('favorite').onclick=()=>{stop();updateAnnotation({favorite:!annotation(hand()).favorite});renderList();render();}; $('notes').oninput=()=>updateAnnotation({note:$('notes').value});
   $('search').oninput=filterChanged; $('filter').onchange=()=>{filterChanged(); if (['positive','negative'].includes($('filter').value)&&$('spoilers').checked) toast('Sem spoilers: resultados exibidos apenas para a mão concluída.');};
   $('select-all').onclick=()=>{const all=filtered.every(i=>selected.has(i)); filtered.forEach(i=>all?selected.delete(i):selected.add(i));renderList();};

@@ -20,8 +20,8 @@ select(app,'setting-units','bb');select(app,'setting-speed','2');select(app,'mom
 assert.equal(app.$('speed').value,'2');assert(prefs(app).bb);
 app.click('settings-close');assert(!app.$('settings-dialog').open);assert.equal(app.$('options-toggle').getAttribute('aria-expanded'),'false');
 app=boot(app.data);assert.equal(app.document.documentElement.getAttribute('data-theme'),'light');assert.equal(app.$('setting-table').value,'blue');assert.equal(app.$('setting-back').value,'red');assert.equal(app.$('setting-speed').value,'2');assert.equal(app.$('moment-pause').value,'2000');assert(app.$('hero-pause').checked);assert(app.document.body.classList.contains('four-colors'));assert(app.document.body.classList.contains('hide-positions'));
-app.import();assert.match(app.$('units').textContent,/^BB/);app.click('options-toggle');assert(app.$('settings-dialog').open);assert(!app.$('settings-playback').hidden,'quick adjustments open the centralized playback tab');
-app.click('settings-close');app.click('units');app.click('settings-open');assert.equal(app.$('setting-units').value,'chips','toolbar unit button stays synchronized');
+app.import();assert.equal(app.$('units'),null);assert.equal(app.$('stack-label').textContent,'STACK · BB');app.click('options-toggle');assert(app.$('settings-dialog').open);assert(!app.$('settings-playback').hidden,'quick adjustments open the centralized playback tab');
+select(app,'setting-units','chips');assert.equal(app.$('stack-label').textContent,'STACK · FICHAS');app.click('settings-close');app.click('settings-open');assert.equal(app.$('setting-units').value,'chips','unit preference remains available exclusively in settings');
 select(app,'speed','4');app.click('settings-close');app.click('settings-open');assert.equal(app.$('setting-speed').value,'4','transport speed stays synchronized');
 app.click('settings-close');app.click('play');assert([...app.timers.values()].some(t=>t.ms===250));app.click('settings-open');assert(![...app.timers.values()].some(t=>t.ms===250),'opening settings pauses playback');
 app.$('notes').value='Preservar meu estudo';app.$('notes').oninput();app.click('favorite');

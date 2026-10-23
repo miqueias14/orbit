@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="studio.css">
   <link rel="stylesheet" href="viewer.css">
   <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="premium.css">
 </head>
 <body>
   <header class="topbar">
@@ -23,6 +24,7 @@
     </div>
   </header>
 
+  <div class="session-heading">
   <div class="tournament-bar">
     <div><span class="eyebrow">SEU ESPAÇO DE ESTUDO</span><h1 id="tournament-title">Replay de torneios</h1></div>
     <div class="session-meta" id="session-meta">PokerStars · No Limit Hold’em</div>
@@ -32,6 +34,7 @@
     <button id="review-open"><span aria-hidden="true">☆</span> <span class="tool-label-full">Fila de revisão</span><span class="tool-label-short">Revisão</span> <span id="review-count" class="badge">0</span></button>
     <button id="graph-open"><span aria-hidden="true">↗</span> <span class="tool-label-full">Evolução do stack</span><span class="tool-label-short">Stack em BB</span></button>
     
+  </div>
   </div>
   <nav class="mobile-tabs" aria-label="Painéis">
     <button data-tab="hands"><span aria-hidden="true">▤</span> Mãos</button>
@@ -58,12 +61,18 @@
   <main class="workspace history-hidden" data-tab="table">
     <aside class="hand-panel panel" aria-label="Mãos da sessão">
       <div class="panel-title"><h2>Mãos da sessão</h2><span id="hand-count" class="badge">0</span></div>
+      <section class="sidebar-filters" aria-label="Filtrar mãos">
+        <h3 class="sidebar-label">Ações</h3>
+        <div class="quick-filters" aria-label="Filtros de ações">
+          <button data-filter="all" aria-pressed="true">Todas</button><button data-filter="rfi" aria-pressed="false" title="Open raise do herói">RFI</button><button data-filter="threebet" aria-pressed="false" title="3-bet do herói">3-bet</button><button data-filter="heroAllin" aria-pressed="false" title="Seus all-ins em call, aposta ou aumento. Antes e blinds obrigatórios ficam separados.">Meus all-ins</button><button data-filter="vpip" aria-pressed="false" title="Participação voluntária do herói">Joguei · VPIP</button><button data-filter="favorite" aria-pressed="false">★ Favoritas</button>
+        </div>
+        <h3 class="sidebar-label">Resultados</h3>
+        <div class="quick-filters result-filters" aria-label="Filtros de resultados"><button data-filter="positive" aria-pressed="false">Ganho em fichas</button><button data-filter="negative" aria-pressed="false">Perda em fichas</button></div>
+      </section>
       <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ID, jogador ou cartas" aria-label="Buscar por ID, jogador ou cartas"></label>
-      <div class="quick-filters" aria-label="Filtros rápidos">
-        <button data-filter="all" aria-pressed="true">Todas</button><button data-filter="vpip" aria-pressed="false">Joguei</button><button data-filter="anyAllin" aria-pressed="false" title="All-in de qualquer jogador">All-in</button><button data-filter="favorite" aria-pressed="false">★ Favoritas</button>
-      </div>
+
       <label class="sr-only" for="filter">Tipo de mão</label>
-      <select id="filter"><option value="all">Todos os tipos de mão</option><option value="vpip">Participação voluntária</option><option value="rfi">Open raise / RFI do herói</option><option value="threebet">3-bet do herói</option><option value="heroAllin">All-in do herói</option><option value="anyAllin">All-in de qualquer jogador</option><option value="showdown">Showdown</option><option value="positive">Resultado positivo</option><option value="negative">Resultado negativo</option><option value="favorite">Favoritas</option></select>
+      <select id="filter"><option value="all">Todos os tipos de mão</option><option value="vpip">Participação voluntária</option><option value="rfi">Open raise / RFI do herói</option><option value="threebet">3-bet do herói</option><option value="heroAllin">Meus all-ins (call, aposta ou aumento)</option><option value="heroForcedAllin">Meu all-in obrigatório (ante/blind)</option><option value="anyAllin">All-in na mesa (qualquer jogador)</option><option value="showdown">Showdown</option><option value="positive">Resultado positivo</option><option value="negative">Resultado negativo</option><option value="favorite">Favoritas</option></select>
       <details class="advanced-search">
         <summary>Busca avançada <span aria-hidden="true">＋</span></summary>
         <div class="advanced-fields">
@@ -83,7 +92,7 @@
     <section class="replay-column" aria-label="Mesa e reprodução">
       <div class="table-heading">
         <div><span class="eyebrow" id="hand-number">REPLAYER DE TORNEIOS</span><h2 id="hand-title">Selecione uma mão</h2></div>
-        <div class="heading-actions"><button id="units" aria-label="Alternar fichas e big blinds">Fichas ⇄ BB</button><button id="export-image" title="Salvar imagem da mesa atual" aria-label="Exportar imagem da mesa">↧ Imagem</button><button id="favorite" aria-label="Favoritar mão" aria-pressed="false">☆</button><button id="history-toggle" aria-label="Mostrar ações e notas" aria-expanded="false" aria-controls="study-panel">✎ Estudo</button></div>
+        <div class="heading-actions"><button id="export-image" title="Salvar imagem da mesa atual" aria-label="Exportar imagem da mesa">↧ Imagem</button><button id="favorite" aria-label="Favoritar mão" aria-pressed="false">☆</button><button id="history-toggle" aria-label="Mostrar ações e notas" aria-expanded="false" aria-controls="study-panel">✎ Estudo</button></div>
       </div>
       <div class="table-status"><span id="players-in-hand">— jogadores na disputa</span><span class="table-status-hint">Valores do momento atual</span></div>
       <div id="arena" class="arena">
@@ -91,18 +100,22 @@
         <div id="table-center" class="table-center"><span class="eyebrow">UMA DECISÃO DE CADA VEZ</span><div id="board" class="board"></div><div id="pot" class="pot">Cada mão, uma nova perspectiva.</div><div id="side-pots" class="side-pots"></div><span id="street-label" class="street-label">Importe um histórico para começar</span></div>
         <div id="seats"></div>
       </div>
+      <div class="hand-context">
       <section class="action-card" aria-label="Ação atual">
         <div id="current-action" class="current-action" aria-live="polite"><span class="live-dot" aria-hidden="true"></span><span id="action-text">Pronto para acompanhar a mão.</span></div>
         <p id="action-detail" class="action-detail"></p>
         <div id="decision-context" class="decision-context" aria-live="polite"></div>
       </section>
-      <div id="showdown-results" class="showdown-results" aria-label="Combinações reveladas" hidden></div>
       <section class="study-strip" aria-label="Contexto da próxima ação"><p id="decision-player" class="decision-player">Aguardando uma ação</p><div><span class="eyebrow" id="stack-label">STACK DO JOGADOR</span><strong id="hero-stack">—</strong></div><div><span class="eyebrow" id="call-label">PARA PAGAR</span><strong id="to-call">—</strong></div><div><span class="eyebrow">POT ODDS</span><strong id="pot-odds">—</strong></div><small id="odds-note">Informações para a próxima decisão.</small></section>
+      </div>
+      <div id="showdown-results" class="showdown-results" aria-label="Combinações reveladas" hidden></div>
       <div class="playback panel">
         <div class="playback-header"><div class="hand-navigation"><button id="prev-hand" title="Shift + ←">← Mão anterior</button><button id="next-hand" title="Shift + →">Próxima mão →</button></div><button id="options-toggle" aria-expanded="false" aria-controls="settings-dialog">Ajustes</button></div>
         <label class="timeline-wrap"><span class="sr-only">Evento do replay</span><input id="timeline" type="range" min="0" max="0" value="0"><span id="event-count">0 / 0</span></label>
+        <div class="replay-dock" role="region" aria-label="Controles de reprodução sempre visíveis">
         <div class="transport"><button id="prev" title="Ação anterior (←)">‹ <span>Voltar</span></button><button id="play" class="play-button" title="Espaço para reproduzir ou pausar">▶ Reproduzir</button><button id="next" title="Próxima ação (→)"><span>Avançar</span> ›</button><label class="speed-label"><span class="sr-only">Velocidade</span><select id="speed"><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label></div>
         <div class="decision-controls"><button id="next-decision">Minha próxima decisão ↗</button><button id="mark-decision" aria-label="Marcar e anotar esta jogada">☆ Marcar jogada</button></div>
+        </div>
         <div id="streets" class="streets"><button data-street="preflop">Pré-flop</button><button data-street="flop">Flop</button><button data-street="turn">Turn</button><button data-street="river">River</button><button data-street="showdown">Showdown</button></div>
 
       </div>

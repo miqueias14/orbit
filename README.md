@@ -8,6 +8,18 @@ Replayer local de históricos de torneio PokerStars em inglês. HTML, CSS e Java
 2. Clique em **Importar histórico** e selecione `reference-history.txt`, arraste o arquivo para a janela ou cole o histórico.
 3. Use **▶**, a timeline e os botões de street para estudar. O arquivo de referência é uma cópia integral do histórico real localizado na pasta de torneios, sem dados fixados no parser.
 
+### Layout inspirado na referência
+
+No desktop, a interface organiza os filtros e a lista de mãos em uma coluna à esquerda e a mesa em um painel próprio à direita. A coluna separa filtros de ações (Todas, RFI, 3-bet, Meus all-ins, Joguei/VPIP e Favoritas) dos filtros de resultado em fichas. Esses atalhos utilizam as classificações existentes; as regras de cálculo não foram alteradas. A importação permanece disponível no cabeçalho.
+
+O cabeçalho da sessão reúne torneio, blinds e ferramentas de revisão. A mesa usa um contorno horizontal arredondado e mantém as coordenadas dos jogadores e apostas. No desktop, os controles fixos se alinham à área do replay; em janelas menores, podem se organizar em duas linhas. A navegação por abas e a mesa oval do celular continuam disponíveis. As cores selecionadas nas Configurações têm prioridade.
+
+### Redesign visual premium
+
+A camada `premium.css` é carregada após os estilos existentes e refina tipografia, cards dos jogadores, apostas, pote, lista de mãos, painéis e controles. Reutiliza os tokens dinâmicos das Configurações (`--site-accent`, `--table-color`, `--card-*` e superfícies do tema), sem redefinir as preferências de cor. As coordenadas dos assentos, os pontos das apostas e o posicionamento fixo dos controles permanecem nos estilos originais. A largura dos cards dos jogadores se adapta à largura disponível da mesa no desktop, sem alterar as coordenadas.
+
+O motor, o parser e os cálculos foram preservados. A reorganização da interface agrupa controles existentes. Os testes de replay, filtros, exportação e configurações passaram. Foram verificados seis perfis de preferências em DOM simulado, cobrindo os três temas, as quatro mesas, fundos e versos de cartas, quatro cores e destaques preto/branco. O CSS foi analisado sem redefinições dos tokens de cor ou das coordenadas dos jogadores. Esses testes não comprovam o layout renderizado; a conferência visual em navegador/aparelho real continua pendente.
+
 ### Configurações
 
 Abra **Configurações** (engrenagem no cabeçalho) mesmo antes de importar um histórico. O botão **Ajustes** do replay abre diretamente a aba Reprodução.
@@ -17,13 +29,19 @@ Abra **Configurações** (engrenagem no cabeçalho) mesmo antes de importar um h
 - **Reprodução:** unidade fichas/BB, velocidade, tempo extra em momentos importantes, reprodução contínua, pausa antes do herói e ocultação de resultados futuros. Os controles da tela principal permanecem sincronizados.
 - As escolhas são aplicadas na hora e salvas neste navegador. Se o armazenamento estiver indisponível, a área informa que valem somente para a sessão atual. **Restaurar padrão** redefine apenas as preferências, preservando históricos, biblioteca, favoritos e notas.
 
+### Controles sempre acessíveis
+
+**Voltar**, **Reproduzir**, **Avançar**, **Minha próxima decisão** e **Marcar jogada** ficam em uma barra fixa na parte inferior da tela. No celular, a barra fica acima das abas Mãos/Mesa/Estudo. A página reserva espaço abaixo do conteúdo para permitir que as últimas informações sejam roladas acima dos controles. Timeline, mudança de mão e streets continuam no painel da página.
+
+No computador, ação atual e valores da decisão ficam lado a lado em telas largas. A altura da mesa se adapta à altura da janela, preservando uma margem para o assento inferior. Janelas menores continuam permitindo rolagem para consultar informações, com os controles principais disponíveis na aba Mesa.
+
 ### Leitura da mão e novo visual
 
 - Mesa verde sobre superfícies neutras, com menos textos decorativos e um bloco dedicado à ação atual. A mesa continua oval no celular. Valores, ação e controles têm áreas distintas; os detalhes de reprodução ficam em **Ajustes**.
 - Cada assento mostra a posição inicial na mão (BTN, SB, BB, CO etc.). Nomes longos continuam abreviados no assento; o nome completo aparece no texto da ação e no contexto do jogador a agir.
 - A contagem acima da mesa informa quantos jogadores continuam na disputa e quantos estão all-in.
 - A explicação de uma aposta usa o pote imediatamente anterior à ação, inclusive em all-ins. Um aumento informa o valor anterior da aposta, o novo total e quanto o jogador acrescentou. Não há classificação de qualidade da jogada.
-- **Stack**, **Para pagar** e **Pot odds** pertencem ao jogador identificado em **Vez de…** e seguem a unidade escolhida em **Fichas ⇄ BB**. Entre decisões e ao concluir a mão, os valores ficam vazios. As pot odds usam o pote após o call; quando o jogador não é elegível a todas as contribuições, o percentual é ocultado.
+- **Stack**, **Para pagar** e **Pot odds** pertencem ao jogador identificado em **Vez de…** e seguem a unidade escolhida em **Configurações → Reprodução → Unidade dos valores**. Entre decisões e ao concluir a mão, os valores ficam vazios. As pot odds usam o pote após o call; quando o jogador não é elegível a todas as contribuições, o percentual é ocultado.
 - No showdown, as combinações das cartas conhecidas aparecem abaixo da ação (par, dois pares, sequência etc.). O cálculo escolhe as cinco melhores cartas entre as disponíveis. Cartas presentes apenas no resumo só entram após o fim da mão e com a consulta explícita habilitada; voltar antes do showdown oculta os nomes das combinações.
 - Em **Ajustes → Tempo extra em cartas novas e all-ins**, escolha de zero a três segundos adicionais após flop, turn, river, showdown e ações all-in. A preferência é salva no navegador e respeita a pausa antes da decisão do herói.
 
@@ -54,7 +72,7 @@ Os eventos de ante são pulados automaticamente durante a reprodução, os passo
 - **Minha próxima decisão** pula para antes da próxima ação do herói, inclusive na próxima mão que tiver uma decisão. Ao chegar, o botão muda para **Revelar minha decisão**. Nenhuma ação futura é mostrada antes desse clique.
 - **Resumo da mão** aparece ao concluir os eventos: resultado líquido em fichas, stack final em BB e cada pagamento/pote registrado. Voltar na timeline oculta novamente o resumo. Mãos incompletas ou com divergências recebem uma indicação explícita.
 - **Retomada automática:** o histórico e a posição são salvos neste navegador. Ao reabrir, a sessão volta pausada no mesmo evento. **Apagar sessão** remove histórico e progresso, preservando favoritos e notas. Se o navegador não tiver espaço ou bloquear o armazenamento, o replay continua funcionando e informa que a retomada não foi salva.
-- **Filtros rápidos:** Todas, Joguei (participação voluntária), All-in (qualquer jogador) e Favoritas. Os filtros detalhados continuam no seletor.
+- **Filtros rápidos:** Todas, Joguei (participação voluntária), Meus all-ins (call, aposta ou aumento do herói) e Favoritas. O seletor também separa **Meu all-in obrigatório (ante/blind)** e **All-in na mesa (qualquer jogador)**. Assim, fold pré-flop com all-in de um adversário não aparece em Meus all-ins.
 - **Fila de estudo:** mão anterior/próxima, resumo, reprodução contínua e próxima decisão seguem somente as mãos do filtro e da busca atuais. Alterar o filtro pausa o replay. Sem resultados, os controles de reprodução ficam desabilitados. Ao chegar ao fim da seleção, a reprodução para; tocar em Play novamente reinicia a última mão quando não houver outra na fila.
 - **Sessão protegida:** a importação salva o novo histórico e uma posição inicial em uma única gravação. Se faltar espaço, o novo histórico continua aberto na memória e a sessão anterior permanece disponível para retomar. Históricos salvos por versões anteriores continuam compatíveis.
 - **Marcar jogada** salva uma nota naquele ponto da timeline. Em **Ações e notas → Jogadas marcadas**, toque na nota para voltar ao evento ou use **Editar**. É possível remover a marcação. O backup de anotações inclui essas notas e aceita backups antigos sem notas por evento. Notas futuras ficam ocultas no modo sem spoilers.

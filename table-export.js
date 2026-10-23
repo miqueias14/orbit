@@ -34,7 +34,7 @@
       cards: cards(p.cards && p.cards.length ? p.cards :
         options.studyCards && Object.prototype.hasOwnProperty.call(options.studyCards, p.name) ? options.studyCards[p.name] : [], 2),
       hero: p.name === hand.hero, dealer: p.seat === hand.button,
-      folded: Boolean(p.folded), allIn: Boolean(p.allIn),
+      folded: Boolean(p.folded), allIn: Boolean(p.allIn&&!p.folded),
       sittingOut: Boolean(p.sittingOut), disconnected: Boolean(p.disconnected),
       blind: ['SB','BB'].includes(p.blind) ? p.blind : '',
       current: Boolean(state.current && state.current.player === p.name),
@@ -163,7 +163,7 @@
       rounded(ctx, x - w / 2, y, w, h, 15, player.hero ? '#252533' : '#1b2028', player.hero ? '#bc97ff' : player.current ? '#b894ee' : '#434a55', player.hero ? 2.5 : 1.5);
       text(ctx, player.name, x, y + 24, player.hero ? 20 : 19, '#f4effa', 750, w - 20);
       text(ctx, format(player.stack, scene.bigBlind, scene.bb), x, y + 57, player.hero ? 25 : 24, player.hero ? '#e1c9ff' : '#dcd2e6', 750, w - 18);
-      const status = player.allIn ? 'ALL-IN' : player.folded ? 'FOLD' : player.disconnected ? 'DESCONECTADO' : player.sittingOut ? 'AUSENTE' : player.action;
+      const status = player.folded ? 'FOLD' : player.allIn ? 'ALL-IN' : player.disconnected ? 'DESCONECTADO' : player.sittingOut ? 'AUSENTE' : player.action;
       if (status) {
         rounded(ctx, x - w / 2 + 12, y + h - 4, w - 24, 27, 8, player.allIn ? '#8f682b' : '#322442');
         text(ctx, status, x, y + h + 10, 14, player.allIn ? '#fff1cf' : '#c5b4d6', 750, w - 35);

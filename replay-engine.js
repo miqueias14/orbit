@@ -22,8 +22,8 @@
       if (event.kind === 'sb' || event.kind === 'bb') p.blind = event.kind.toUpperCase();
     }
     if (event.type === 'return' && p) {p.stack += event.amount; p.total -= event.amount; p.bet = Math.max(0, p.bet - event.amount); s.pot -= event.amount; p.allIn = p.stack === 0;}
-    if (event.type === 'collect' && p) {p.stack += event.amount; p.won += event.amount; s.pot -= event.amount; s.paid += event.amount;}
-    if (event.type === 'fold' && p) p.folded = true;
+    if (event.type === 'collect' && p) {p.stack += event.amount; p.won += event.amount; s.pot -= event.amount; s.paid += event.amount; if(p.stack>0)p.allIn=false;}
+    if (event.type === 'fold' && p) {p.folded = true;p.allIn=false;}
     if (['deal','show'].includes(event.type) && p) p.cards = event.cards;
     if (event.type === 'status' && p) {
       if (event.status === 'disconnected') p.disconnected = true;
@@ -58,7 +58,12 @@
     const actions = hand.events.filter(e => e.street === 'preflop' && ['call','bet','raise'].includes(e.type));
     let raises = 0, rfi = false, threebet = false;
     for (const e of actions) {if (e.type === 'raise') {raises++; if (e.player === hand.hero && raises === 2) threebet = true;} if (e === actions[0] && e.type === 'raise' && e.player === hand.hero) rfi = true;}
-    return {snapshots, final, issues, net: hero ? hero.stack-hero.initial : null, flags: {vpip: actions.some(e => e.player === hand.hero), rfi, threebet, heroAllin: hand.events.some(e => e.player === hand.hero && e.allIn), anyAllin: hand.events.some(e => e.allIn), showdown: hand.events.some(e => e.street === 'showdown')}};
+    const allins=hand.events.filter((event,index)=>{
+      if(!['post','call','bet','raise'].includes(event.type))return false;
+      const before=snapshots[index].players.find(p=>p.name===event.player),after=snapshots[index+1].players.find(p=>p.name===event.player);
+      return before&&after&&before.stack>after.stack&&(event.allIn||after.stack===0);
+    });
+    return {snapshots, final, issues, net: hero ? hero.stack-hero.initial : null, flags: {vpip: actions.some(e => e.player === hand.hero), rfi, threebet, heroAllin: allins.some(e=>e.player===hand.hero&&e.type!=='post'),heroForcedAllin:allins.some(e=>e.player===hand.hero&&e.type==='post'),anyAllin:allins.length>0,showdown: hand.events.some(e => e.street === 'showdown')}};
   }
   function decision(s, name) {
     const p = s.players.find(p => p.name === name); if (!p || p.folded || p.allIn || p.stack<=0) return null;

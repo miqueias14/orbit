@@ -53,6 +53,9 @@ function fakeCanvas() {
   return {labels, getContext(type) {assert.equal(type, '2d'); return context;}, toBlob(callback, type) {assert.equal(type, 'image/png'); callback(new Blob(['png'], {type}));}};
 }
 
+const foldedReplay=Engine.compile(hands[46]),foldedIndex=hands[46].events.findIndex(e=>e.type==='fold'&&e.player===hands[46].hero);
+const foldedScene=TableExport.createScene(hands[46],foldedReplay.snapshots[foldedIndex+1]);assert(foldedScene.players[0].folded);assert.equal(foldedScene.players[0].allIn,false);
+const foldedCanvas=fakeCanvas();TableExport.render(foldedCanvas,foldedScene);assert(foldedCanvas.labels.includes('FOLD'));assert(!foldedCanvas.labels.includes('ALL-IN'),'export must display fold after the recorded forced blind all-in');
 (async () => {
   const canvas = fakeCanvas();
   assert.equal(TableExport.render(canvas, base), canvas);
